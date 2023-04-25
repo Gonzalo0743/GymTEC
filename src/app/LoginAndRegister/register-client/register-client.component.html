@@ -19,18 +19,34 @@
             <h2 class="fw-bold mb-5">Client Registration</h2>
             <h3 class="mb-1">Please, fill out this form:</h3>
             <form>
-              <!--First and Last name -->
+              <!--First and Second name -->
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
+                    <input type="string" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
-                    <label class="form-label" for="form3Example2">Last name</label>
+                    <input type="string" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Second name</label>
+                  </div>
+                </div>
+              </div>
+
+              <!--Last Name (1) and Last name(2) -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="string" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">Last name (1)</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="string" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name (2)</label>
                   </div>
                 </div>
               </div>
@@ -56,7 +72,7 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="date" id="form3Example1" class="form-control" />
+                    <input type="string" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Birthdate</label>
                   </div>
                 </div>
@@ -80,7 +96,7 @@
 
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
+                    <input type="string" id="form3Example2" class="form-control" />
                     <label class="form-label" for="form3Example2">Adress</label>
                   </div>
                 </div>
@@ -88,13 +104,13 @@
   
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="string" id="form3Example3" class="form-control" />
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
   
               <!-- Password input -->
               <div class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
+                <input type="string" id="form3Example4" class="form-control" />
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
 
@@ -103,7 +119,7 @@
               
               <!-- Submit button -->
               <div class="d-flex align-items-center justify-content-center pb-4">
-                <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Sign up</button>
+                <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" routerLink="/">Sign up</button>
               </div>
 
               <!-- Back button -->
@@ -116,5 +132,4 @@
       </div>
     </div>
   </section>
-  <app-footer></app-footer>
   <!-- Section: Design Block -->
