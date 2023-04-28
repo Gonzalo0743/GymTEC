@@ -29,6 +29,9 @@ import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/
 import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/services-management-page/services-management-page.component';
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/products-management-page/products-management-page.component';
+import { ClientLandPageComponent } from './Pages/Client/client-land-page/client-land-page.component';
+import { HeaderClientComponent } from './Components/header-client/header-client.component';
+import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-register-page/client-class-register-page.component';
 
 
 @NgModule({
@@ -55,6 +58,9 @@ import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPage
     SpaTreatmentManagementPageComponent,
     ServicesManagementPageComponent,
     ProductsManagementPageComponent,
+    ClientLandPageComponent,
+    HeaderClientComponent,
+    ClientClassRegisterPageComponent,
 
     
     
