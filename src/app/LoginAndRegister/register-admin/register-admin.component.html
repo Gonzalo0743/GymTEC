@@ -23,7 +23,7 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="int" id="form3Example1" class="form-control" />
+                    <input type="string" [(ngModel)]="idAdmin" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Identification Number</label>
                   </div>
                 </div>
@@ -43,7 +43,7 @@
 
               <!-- Back button -->
               <div class="d-flex align-items-center justify-content-center pb-4">
-                <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" routerLink="/loginAdmin">Back</button>
+                <button (click)="postData" type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" routerLink="/loginAdmin">Back</button>
               </div>
             </form>
           </div>

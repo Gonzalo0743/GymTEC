@@ -8,25 +8,26 @@ import { Component } from '@angular/core';
 })
 export class RegisterClientComponent {
 
-  public postJsonValue: any;
+  Fname: String | undefined
 
   constructor(private http: HttpClient){
 
   }
 
-  ngOnInit(): void{
+  postData(){
+    let url = "https://localhost:7194/api/add_client"
 
-  }
+    this.http.post(url,{
+      Fname: this.Fname
+    }).toPromise().then((data: any)=> {
+      console.log(data)
+    })
 
-  public postMethod(){
-    this.http.post('https://localhost:7194/api/add_client', {}).subscribe((data)=>{
-      console.log(data);
-      this.postJsonValue = data;
-    }
-    );
+  
 
-  }
+}
   
   
 
 }
+
