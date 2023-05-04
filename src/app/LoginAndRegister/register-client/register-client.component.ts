@@ -16,18 +16,19 @@ export class RegisterClientComponent {
     jsonResponse: any;
 
     createClientForm = this.builder.group({
-      Fname: this.builder.control('', Validators.required),
-      Sname: this.builder.control('', Validators.required),
-      Lname1: this.builder.control('', Validators.required),
-      Lname2: this.builder.control('', Validators.required),
-      idNumb: this.builder.control('', Validators.required),
-      age: this.builder.control('', Validators.required),
-      birthdate: this.builder.control('', Validators.required),
-      BMI: this.builder.control('', Validators.required),
-      weight: this.builder.control('', Validators.required),
+
+      iD_Client: this.builder.control('', Validators.required),
       address: this.builder.control('', Validators.required),
+      weight: this.builder.control('', Validators.required),
+      bmi: this.builder.control('', Validators.required),
+      fname1: this.builder.control('', Validators.required),
+      fname2: this.builder.control('', Validators.required),
+      last_name1: this.builder.control('', Validators.required),
+      last_name2: this.builder.control('', Validators.required),
+      password: this.builder.control('', Validators.required),
+      birth_Date: this.builder.control('', Validators.required),
       email: this.builder.control('', Validators.required),
-      password: this.builder.control('', Validators.required)
+      
 
     })
 
@@ -39,7 +40,7 @@ export class RegisterClientComponent {
         this.service.postAddClient(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['']);
         })
       }
       else{
