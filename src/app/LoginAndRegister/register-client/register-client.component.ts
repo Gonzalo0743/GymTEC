@@ -19,8 +19,8 @@ export class RegisterClientComponent {
 
       iD_Client: this.builder.control('', Validators.required),
       address: this.builder.control('', Validators.required),
-      weight: this.builder.control('', Validators.required),
-      bmi: this.builder.control('', Validators.required),
+      weight: this.builder.control(0, Validators.required),
+      bmi: this.builder.control(0, Validators.required),
       fname1: this.builder.control('', Validators.required),
       fname2: this.builder.control('', Validators.required),
       last_name1: this.builder.control('', Validators.required),
