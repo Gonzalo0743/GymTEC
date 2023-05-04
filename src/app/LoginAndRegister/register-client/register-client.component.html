@@ -18,18 +18,18 @@
           <div class="col-lg-8">
             <h2 class="fw-bold mb-5">Client Registration</h2>
             <h3 class="mb-1">Please, fill out this form:</h3>
-            <form>
+            <form [formGroup]="createClientForm" (ngSubmit)="proceedAddClient">
               <!--First and Second name -->
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="string" id="form3Example1" class="form-control" [ngModel]="Fname"/>
+                    <input type="text" formControlName="Fname" id="Fnamelabel" class="form-control"/>
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="string" id="form3Example2" class="form-control" />
+                    <input type="text" formControlName="Sname" id="Snamelabel" class="form-control" />
                     <label class="form-label" for="form3Example2">Second name</label>
                   </div>
                 </div>
@@ -39,13 +39,13 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="string" id="form3Example1" class="form-control" />
+                    <input type="text" formControlName="Lname1" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Last name (1)</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="string" id="form3Example2" class="form-control" />
+                    <input type="text" formControlName="Lname2" id="form3Example2" class="form-control" />
                     <label class="form-label" for="form3Example2">Last name (2)</label>
                   </div>
                 </div>
@@ -55,14 +55,14 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="int" id="form3Example1" class="form-control" />
+                    <input type="text" formControlName="idNumb" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Identification Number</label>
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="int" id="form3Example2" class="form-control" />
+                    <input type="text" formControlName="age" id="form3Example2" class="form-control" />
                     <label class="form-label" for="form3Example2">Age</label>
                   </div>
                 </div>
@@ -72,14 +72,14 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="string" id="form3Example1" class="form-control" />
+                    <input type="text" formControlName="birthdate" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Birthdate</label>
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="int" id="form3Example2" class="form-control" />
+                    <input type="text" formControlName="BMI" id="form3Example2" class="form-control" />
                     <label class="form-label" for="form3Example2">Body Mass Index (BMI)</label>
                   </div>
                 </div>
@@ -89,14 +89,14 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="int" id="form3Example1" class="form-control" />
+                    <input type="text" formControlName="weight" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Weight (Kg)</label>
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="string" id="form3Example2" class="form-control" />
+                    <input type="text" formControlName="address" id="form3Example2" class="form-control" />
                     <label class="form-label" for="form3Example2">Adress</label>
                   </div>
                 </div>
@@ -104,13 +104,13 @@
   
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="string" id="form3Example3" class="form-control" />
+                <input type="email" formControlName="email" id="form3Example3" class="form-control" />
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
   
               <!-- Password input -->
               <div class="form-outline mb-4">
-                <input type="string" id="form3Example4" class="form-control" />
+                <input type="text" formControlName="password" id="form3Example4" class="form-control" />
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
 
@@ -119,12 +119,12 @@
               
               <!-- Submit button -->
               <div class="d-flex align-items-center justify-content-center pb-4">
-                <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" routerLink="/">Sign up</button>
+                <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Sign up</button>
               </div>
 
               <!-- Back button -->
               <div class="d-flex align-items-center justify-content-center pb-4">
-                <button (click)="postData()" type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" routerLink="/">Back</button>
+                <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" routerLink="/">Back</button>
               </div>
             </form>
           </div>
