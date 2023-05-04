@@ -17,9 +17,9 @@ export class RegisterClientComponent {
 
     createClientForm = this.builder.group({
       Fname: this.builder.control('', Validators.required),
-      Sname: this.builder.control(''),
+      Sname: this.builder.control('', Validators.required),
       Lname1: this.builder.control('', Validators.required),
-      Lname2: this.builder.control(''),
+      Lname2: this.builder.control('', Validators.required),
       idNumb: this.builder.control('', Validators.required),
       age: this.builder.control('', Validators.required),
       birthdate: this.builder.control('', Validators.required),
@@ -41,6 +41,9 @@ export class RegisterClientComponent {
           console.log(this.jsonResponse);
           this.router.navigate(['/']);
         })
+      }
+      else{
+        console.log("Error");
       }
     }
 
