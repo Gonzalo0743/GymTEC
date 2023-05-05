@@ -18,9 +18,9 @@ export class AddBranchesComponent {
 
       Name: this.builder.control('', Validators.required),
       Province: this.builder.control('', Validators.required),
-      District: this.builder.control(0, Validators.required),
-      Canton: this.builder.control(0, Validators.required),
-      max_Size: this.builder.control('', Validators.required),
+      District: this.builder.control('', Validators.required),
+      Canton: this.builder.control('', Validators.required),
+      max_Size: this.builder.control(0, Validators.required),
       opening_Date: this.builder.control('', Validators.required),
       schedule_Attention: this.builder.control('', Validators.required),
       

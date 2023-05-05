@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './LoginAndRegister/main-page/main-page.component';
 import { LoginAdminComponent } from './LoginAndRegister/login-admin/login-admin.component';
 import { RegisterClientComponent } from './LoginAndRegister/register-client/register-client.component';
-import { RegisterAdminComponent } from './LoginAndRegister/register-admin/register-admin.component';
 
 import { AdminLandPageComponent } from './Pages/Admin/admin-land-page/admin-land-page.component';
 import { AdminBranchPageComponent } from './Pages/Admin/admin-branch-page/admin-branch-page.component';
@@ -26,16 +25,20 @@ import { GymsManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/g
 import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/inventory-management/inventory-management.component';
 import { AddInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/add-inventory/add-inventory.component';
 import { ShowInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-inventory/show-inventory.component';
+import { DeleteInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/delete-inventory/delete-inventory.component';
 
 import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/gear-management/gear-management.component';
 
-import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/employee-management-page/employee-management-page.component';
+import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/employee-management-page/employee-management-page.component';
+import { AddEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/add-employee/add-employee.component';
+import { ShowEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-employee/show-employee.component';
+
 import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-management-page/job-management-page.component';
 import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/payroll-management-page/payroll-management-page.component';
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/products-management-page/products-management-page.component';
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/services-management-page/services-management-page.component';
 import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
-import { DeleteInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/delete-inventory/delete-inventory.component';
+
 
 const routes: Routes = [
   {
@@ -50,10 +53,7 @@ const routes: Routes = [
     path:'registerClient',
     component: RegisterClientComponent
   },
-  {
-    path:'registerAdmin',
-    component: RegisterAdminComponent
-  },
+
   {
     path:'AdminLandPage',
     component: AdminLandPageComponent
@@ -128,6 +128,14 @@ const routes: Routes = [
   {
     path:'EmployeeManagement',
     component: EmployeeManagementPageComponent
+  },
+  {
+    path:'AddEmployee',
+    component: AddEmployeeComponent
+  },
+  {
+    path:'ShowEmployee',
+    component: ShowEmployeeComponent
   },
   {
     path:'JobsManagement',

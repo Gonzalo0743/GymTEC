@@ -45,10 +45,23 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_inventory',{params:queryParams});
   }
 
+  public getEmployee(Employee_ID:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("EmployeeID",Employee_ID);
+
+    return this.http.get(this.rootUrl + 'obt_employee',{params:queryParams});
+  }
+
 
   public postAddClient(data:any){
 
     return this.http.post(this.rootUrl + 'add_client', data);
+  }
+
+  public postAddEmployee(data:any){
+
+    return this.http.post(this.rootUrl + 'add_employee', data);
   }
 
   public postAddBranches(data:any){
