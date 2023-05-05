@@ -28,26 +28,26 @@ export class DeleteBranchesComponent {
   
   proceedDeleteBranches(){
 
-  let formObj = this.DeleteBranchesForm.getRawValue();
+    let formObj = this.DeleteBranchesForm.getRawValue();
 
-    console.log(formObj);
-    
-    if(this.DeleteBranchesForm.valid){
+      console.log(formObj);
+      
+      if(this.DeleteBranchesForm.valid){
 
-      this.service.deleteBranches( this.DeleteBranchesForm.value.Name ).subscribe(item => {
+        this.service.deleteBranches( this.DeleteBranchesForm.value.Name ).subscribe(item => {
 
-        this.jsonResponse = item;
+          this.jsonResponse = item;
 
-        if (this.jsonResponse.status == "ok"){
+          if (this.jsonResponse.status == "ok"){
 
-          console.log(this.jsonResponse);
+            console.log(this.jsonResponse);
 
-        }else {
-          
-          this.DeleteBranchesForm.setErrors({ unauthenticated: true });
-        }
-      })
+          }else {
+            
+            this.DeleteBranchesForm.setErrors({ unauthenticated: true });
+          }
+        })
+      }
     }
-  }
 
 }

@@ -35,6 +35,7 @@ import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/pay
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/products-management-page/products-management-page.component';
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/services-management-page/services-management-page.component';
 import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
+import { DeleteInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/delete-inventory/delete-inventory.component';
 
 const routes: Routes = [
   {
@@ -108,6 +109,11 @@ const routes: Routes = [
   {
     path:'AddInventory',
     component: AddInventoryComponent
+
+  },
+  {
+    path:'DeleteInventory',
+    component: DeleteInventoryComponent
 
   },
   {

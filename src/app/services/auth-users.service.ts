@@ -68,6 +68,14 @@ export class AuthUsersService {
 
     return this.http.delete(this.rootUrl + 'delete_branch',{params:queryParams});
 
+  }
+
+  public deleteInventory(SerialNumber:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("SerialNumber",SerialNumber);
+
+    return this.http.delete(this.rootUrl + 'delete_inventory',{params:queryParams});
 
   }
 }
