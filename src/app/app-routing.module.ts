@@ -15,10 +15,17 @@ import { AdminServicesPageComponent } from './Pages/Admin/admin-services-page/ad
 import { ClientLandPageComponent } from './Pages/Client/client-land-page/client-land-page.component';
 import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-register-page/client-class-register-page.component';
 
-import { BranchesManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/branches-management-page/branches-management-page.component';
+import { BranchesManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/branches-management-page/branches-management-page.component';
+import { AddBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/add-branches/add-branches.component';
+import { ShowBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/show-branches/show-branches.component';
+
 import { GymsManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/gyms-management-page/gyms-management-page.component';
-import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/inventory-management/inventory-management.component';
-import { TeamTypeManagementComponent } from './Pages/InnerAdmin/EquipmentPages/team-type-management/team-type-management.component';
+
+import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/inventory-management/inventory-management.component';
+import { AddInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/add-inventory/add-inventory.component';
+
+import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/gear-management/gear-management.component';
+
 import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/employee-management-page/employee-management-page.component';
 import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-management-page/job-management-page.component';
 import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/payroll-management-page/payroll-management-page.component';
@@ -76,6 +83,14 @@ const routes: Routes = [
     component: BranchesManagementPageComponent
   },
   {
+    path:'AddBranches',
+    component: AddBranchesComponent
+  },
+  {
+    path:'ShowBranches',
+    component: ShowBranchesComponent
+  },
+  {
     path:'GymsManagement',
     component: GymsManagementPageComponent
   },
@@ -84,8 +99,13 @@ const routes: Routes = [
     component: InventoryManagementComponent
   },
   {
-    path:'TeamTypeManagement',
-    component: TeamTypeManagementComponent
+    path:'AddInventory',
+    component: AddInventoryComponent
+
+  },
+  {
+    path:'GearManagement',
+    component: GearManagementComponent
   },
   {
     path:'EmployeeManagement',

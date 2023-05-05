@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeamTypeManagementComponent } from './team-type-management.component';
+import { TeamTypeManagementComponent } from './gear-management.component';
 
 describe('TeamTypeManagementComponent', () => {
   let component: TeamTypeManagementComponent;
