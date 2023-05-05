@@ -32,6 +32,7 @@ import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/gear-
 import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/employee-management-page/employee-management-page.component';
 import { AddEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/add-employee/add-employee.component';
 import { ShowEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-employee/show-employee.component';
+import { DeleteEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/delete-employee/delete-employee.component';
 
 import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-management-page/job-management-page.component';
 import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/payroll-management-page/payroll-management-page.component';
@@ -136,6 +137,10 @@ const routes: Routes = [
   {
     path:'ShowEmployee',
     component: ShowEmployeeComponent
+  },
+  {
+    path:'DeleteEmployee',
+    component: DeleteEmployeeComponent
   },
   {
     path:'JobsManagement',

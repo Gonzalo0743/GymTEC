@@ -91,4 +91,13 @@ export class AuthUsersService {
     return this.http.delete(this.rootUrl + 'delete_inventory',{params:queryParams});
 
   }
+
+  public deleteEmployee(Employee_ID:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("EmployeeID",Employee_ID);
+
+    return this.http.delete(this.rootUrl + 'delete_employee',{params:queryParams});
+
+  }
 }
