@@ -15,18 +15,18 @@ export class LoginAdminComponent {
     jsonResponse: any;
 
     loginAdminForm = this.builder.group({
-      email: this.builder.control('', Validators.required),
-      password: this.builder.control('', Validators.required)
+      ID_Credentials: this.builder.control('', Validators.required),
+      Password: this.builder.control('', Validators.required)
     })
 
     proceedAdminLogin(){
       if(this.loginAdminForm.valid){
 
-        this.service.getAdmins(this.loginAdminForm.value.email, this.loginAdminForm.value.password).subscribe(item =>{
+        this.service.getAdmins(this.loginAdminForm.value.ID_Credentials, this.loginAdminForm.value.Password).subscribe(item =>{
           this.jsonResponse = item;
 
           //Revisar si ese "Ok" se escribe exactamente igual
-          if(this.jsonResponse.status == "Ok"){
+          if(this.jsonResponse.status == "ok"){
             this.router.navigate(['/AdminLandPage']);
           }
           else{

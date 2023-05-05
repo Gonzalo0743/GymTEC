@@ -16,18 +16,18 @@ export class MainPageComponent {
     jsonResponse: any;
 
     loginClientForm = this.builder.group({
-      email: this.builder.control('', Validators.required),
-      password: this.builder.control('', Validators.required)
+      ID_Credentials: this.builder.control('', Validators.required),
+      Password: this.builder.control('', Validators.required)
     })
 
     proceedClientLogin(){
       if(this.loginClientForm.valid){
 
-        this.service.getClients(this.loginClientForm.value.email, this.loginClientForm.value.password).subscribe(item =>{
+        this.service.getClients(this.loginClientForm.value.ID_Credentials, this.loginClientForm.value.Password).subscribe(item =>{
           this.jsonResponse = item;
 
           //Revisar si ese "Ok" se escribe exactamente igual
-          if(this.jsonResponse.status == "Ok"){
+          if(this.jsonResponse.status == "ok"){
             this.router.navigate(['/ClientLandPage']);
           }
           else{
