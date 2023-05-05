@@ -4,28 +4,28 @@ import { AuthUsersService } from 'src/app/services/auth-users.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-show-branches',
-  templateUrl: './show-branches.component.html',
-  styleUrls: ['./show-branches.component.css']
+  selector: 'app-show-inventory',
+  templateUrl: './show-inventory.component.html',
+  styleUrls: ['./show-inventory.component.css']
 })
-export class ShowBranchesComponent {
+export class ShowInventoryComponent {
 
   constructor(private builder: FormBuilder, private service: AuthUsersService){}
 
     jsonResponse: any;
     response:any;
 
-    ShowBranchesForm = this.builder.group({
+    ShowInventoryForm = this.builder.group({
 
-      Name: this.builder.control('', Validators.required),
+      Serial_Number: this.builder.control(0, Validators.required),
       
 
     })
 
-    proceedShowBranches(){
-      if(this.ShowBranchesForm.valid){
+    proceedShowInventory(){
+      if(this.ShowInventoryForm.valid){
 
-        this.service.getBranches(this.ShowBranchesForm.value.Name).subscribe(item =>{
+        this.service.getInventory(this.ShowInventoryForm.value.Serial_Number).subscribe(item =>{
 
           this.jsonResponse = item;
 
@@ -35,10 +35,11 @@ export class ShowBranchesComponent {
 
           }
           else{
-            this.ShowBranchesForm.setErrors({ unauthenticated: true});
+            this.ShowInventoryForm.setErrors({ unauthenticated: true});
           }
         })
       }
     }
+
 
 }

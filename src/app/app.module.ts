@@ -42,6 +42,9 @@ import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPage
 import { ClientLandPageComponent } from './Pages/Client/client-land-page/client-land-page.component';
 import { HeaderClientComponent } from './Components/header-client/header-client.component';
 import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-register-page/client-class-register-page.component';
+import { DeleteBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/delete-branches/delete-branches.component';
+import { ShowInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-inventory/show-inventory.component';
+import { DeleteInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/delete-inventory/delete-inventory.component';
 
 
 
@@ -82,6 +85,9 @@ import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-re
     HeaderClientComponent,
     ClientClassRegisterPageComponent,
     ShowBranchesComponent,
+    DeleteBranchesComponent,
+    ShowInventoryComponent,
+    DeleteInventoryComponent,
 
 
     

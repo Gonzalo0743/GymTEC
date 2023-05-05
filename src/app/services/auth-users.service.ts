@@ -34,7 +34,15 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("Name",Name);
 
-    return this.http.get(this.rootUrl + '',{params:queryParams});
+    return this.http.get(this.rootUrl + 'obt_branch',{params:queryParams});
+  }
+
+  public getInventory(Serial_Number:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("SerialNumber",Serial_Number);
+
+    return this.http.get(this.rootUrl + 'obt_inventory',{params:queryParams});
   }
 
 
@@ -51,5 +59,15 @@ export class AuthUsersService {
   public postAddInventory(data:any){
 
     return this.http.post(this.rootUrl + 'add_inventory', data);
+  }
+
+  public deleteBranches(Name:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Name",Name);
+
+    return this.http.delete(this.rootUrl + 'delete_branch',{params:queryParams});
+
+
   }
 }

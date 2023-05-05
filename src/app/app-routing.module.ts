@@ -18,11 +18,14 @@ import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-re
 import { BranchesManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/branches-management-page/branches-management-page.component';
 import { AddBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/add-branches/add-branches.component';
 import { ShowBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/show-branches/show-branches.component';
+import { DeleteBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/delete-branches/delete-branches.component';
+
 
 import { GymsManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/gyms-management-page/gyms-management-page.component';
 
 import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/inventory-management/inventory-management.component';
 import { AddInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/add-inventory/add-inventory.component';
+import { ShowInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-inventory/show-inventory.component';
 
 import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/gear-management/gear-management.component';
 
@@ -91,6 +94,10 @@ const routes: Routes = [
     component: ShowBranchesComponent
   },
   {
+    path:'DeleteBranches',
+    component: DeleteBranchesComponent
+  },
+  {
     path:'GymsManagement',
     component: GymsManagementPageComponent
   },
@@ -101,6 +108,11 @@ const routes: Routes = [
   {
     path:'AddInventory',
     component: AddInventoryComponent
+
+  },
+  {
+    path:'ShowInventory',
+    component: ShowInventoryComponent
 
   },
   {
