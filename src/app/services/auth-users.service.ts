@@ -37,6 +37,11 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_branch',{params:queryParams});
   }
 
+  public getAllBranches(){
+
+    return this.http.get(this.rootUrl + 'all_branches');
+  }
+
   public getInventory(Serial_Number:any){
 
     let queryParams = new HttpParams();

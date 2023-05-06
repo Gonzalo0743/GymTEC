@@ -27,18 +27,18 @@ import { ShowBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/Branche
 
 import { GymsManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/gyms-management-page/gyms-management-page.component';
 import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-management-page/job-management-page.component';
-import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/payroll-management-page/payroll-management-page.component';
+import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/payroll-management-page/payroll-management-page.component';
 
 import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/employee-management-page/employee-management-page.component';
 
-import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/gear-management/gear-management.component';
+import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/gear-management/gear-management.component';
 
 import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/inventory-management/inventory-management.component';
 import { AddInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/add-inventory/add-inventory.component';
 
 import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
-import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/services-management-page/services-management-page.component';
-import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/products-management-page/products-management-page.component';
+import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/services-management-page/services-management-page.component';
+import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/products-management-page/products-management-page.component';
 import { ClientLandPageComponent } from './Pages/Client/client-land-page/client-land-page.component';
 import { HeaderClientComponent } from './Components/header-client/header-client.component';
 import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-register-page/client-class-register-page.component';
@@ -48,6 +48,30 @@ import { DeleteInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/Inve
 import { ShowEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-employee/show-employee.component';
 import { DeleteEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/delete-employee/delete-employee.component';
 import { AddEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/add-employee/add-employee.component';
+import { ShowAllBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/show-all-branches/show-all-branches.component';
+import { EditBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/edit-branches/edit-branches.component';
+import { ShowAllInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-all-inventory/show-all-inventory.component';
+import { EditInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/edit-inventory/edit-inventory.component';
+import { ShowAllGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/show-all-gear/show-all-gear.component';
+import { ShowGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/show-gear/show-gear.component';
+import { AddGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/add-gear/add-gear.component';
+import { EditGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/edit-gear/edit-gear.component';
+import { DeleteGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/delete-gear/delete-gear.component';
+import { ShowAllEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-all-employee/show-all-employee.component';
+import { EditEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/edit-employee/edit-employee.component';
+import { ShowAllPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-all-payroll/show-all-payroll.component';
+import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
+import { EditPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/edit-payroll/edit-payroll.component';
+import { ShowAllProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-all-products/show-all-products.component';
+import { ShowProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-products/show-products.component';
+import { AddProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/add-products/add-products.component';
+import { DeleteProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/delete-products/delete-products.component';
+import { EditProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/edit-products/edit-products.component';
+import { ShowAllServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/show-all-services/show-all-services.component';
+import { AddServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/add-services/add-services.component';
+import { DeleteServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/delete-services/delete-services.component';
+import { EditServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/edit-services/edit-services.component';
+
 
 
 
@@ -93,6 +117,29 @@ import { AddEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages
     ShowEmployeeComponent,
     DeleteEmployeeComponent,
     AddEmployeeComponent,
+    ShowAllBranchesComponent,
+    EditBranchesComponent,
+    ShowAllInventoryComponent,
+    EditInventoryComponent,
+    ShowAllGearComponent,
+    ShowGearComponent,
+    AddGearComponent,
+    EditGearComponent,
+    DeleteGearComponent,
+    ShowAllEmployeeComponent,
+    EditEmployeeComponent,
+    ShowAllPayrollComponent,
+    AddPayrollComponent,
+    EditPayrollComponent,
+    ShowAllProductsComponent,
+    ShowProductsComponent,
+    AddProductsComponent,
+    DeleteProductsComponent,
+    EditProductsComponent,
+    ShowAllServicesComponent,
+    AddServicesComponent,
+    DeleteServicesComponent,
+    EditServicesComponent,
 
 
     
