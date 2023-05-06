@@ -56,6 +56,8 @@ import { EditProductsComponent } from './Pages/InnerAdmin/ServicesPages/Products
 import { ShowProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-products/show-products.component';
 import { ShowAllProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-all-products/show-all-products.component';
 import { DeleteProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/delete-products/delete-products.component';
+import { ShowAllEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-all-employee/show-all-employee.component';
+import { EditEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/edit-employee/edit-employee.component';
 
 
 const routes: Routes = [
@@ -196,6 +198,14 @@ const routes: Routes = [
   {
     path:'DeleteEmployee',
     component: DeleteEmployeeComponent
+  },
+  {
+    path:'ShowAllEmployee',
+    component: ShowAllEmployeeComponent
+  },
+  {
+    path:'EditEmployee',
+    component: EditEmployeeComponent
   },
   {
     path:'JobsManagement',
