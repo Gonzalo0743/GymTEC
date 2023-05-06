@@ -50,6 +50,12 @@ import { EditInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/Invent
 import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
 import { ShowAllPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-all-payroll/show-all-payroll.component';
 import { EditPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/edit-payroll/edit-payroll.component';
+import { EditBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/edit-branches/edit-branches.component';
+import { AddProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/add-products/add-products.component';
+import { EditProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/edit-products/edit-products.component';
+import { ShowProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-products/show-products.component';
+import { ShowAllProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-all-products/show-all-products.component';
+import { DeleteProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/delete-products/delete-products.component';
 
 
 const routes: Routes = [
@@ -113,6 +119,10 @@ const routes: Routes = [
   {
     path:'DeleteBranches',
     component: DeleteBranchesComponent
+  },
+  {
+    path:'EditBranches',
+    component: EditBranchesComponent
   },
   {
     path:'GymsManagement',
@@ -210,6 +220,26 @@ const routes: Routes = [
   {
     path:'ProductsManagement',
     component: ProductsManagementPageComponent
+  },
+  {
+    path:'AddProducts',
+    component: AddProductsComponent
+  },
+  {
+    path:'EditProducts',
+    component: EditProductsComponent
+  },
+  {
+    path:'ShowProducts',
+    component: ShowProductsComponent
+  },
+  {
+    path:'ShowAllProducts',
+    component: ShowAllProductsComponent
+  },
+  {
+    path:'DeleteProducts',
+    component: DeleteProductsComponent
   },
   {
     path:'ServicesManagement',

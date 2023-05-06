@@ -61,6 +61,15 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_employee',{params:queryParams});
   }
 
+  public getProducts(Barcode:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Barcode",Barcode);
+
+    return this.http.get(this.rootUrl + 'obt_product',{params:queryParams});
+  }
+
+
   public getAllBranches(){
 
     return this.http.get(this.rootUrl + 'all_branches');
@@ -79,6 +88,11 @@ export class AuthUsersService {
   public getAllPayroll(){
 
     return this.http.get(this.rootUrl + 'all_payrolls');
+  }
+
+  public getAllProducts(){
+
+    return this.http.get(this.rootUrl + 'all_product');
   }
 
 
@@ -110,6 +124,11 @@ export class AuthUsersService {
   public postAddPayroll(data:any){
 
     return this.http.post(this.rootUrl + 'add_payroll', data);
+  }
+
+  public postAddProducts(data:any){
+
+    return this.http.post(this.rootUrl + 'add_product', data);
   }
 
   public deleteBranches(Name:any){
@@ -145,6 +164,15 @@ export class AuthUsersService {
     queryParams = queryParams.append("GearID",gear_ID);
 
     return this.http.delete(this.rootUrl + 'delete_gear',{params:queryParams});
+
+  }
+
+  public deleteProducts(Barcode:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Barcode",Barcode);
+
+    return this.http.delete(this.rootUrl + 'delete_product',{params:queryParams});
 
   }
 }
