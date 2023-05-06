@@ -95,6 +95,18 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'all_product');
   }
 
+  public getAllServices(){
+
+    return this.http.get(this.rootUrl + 'all_services');
+  }
+
+  public getAllShops(){
+
+    return this.http.get(this.rootUrl + 'all_shop');
+  }
+
+  
+
 
   public postAddClient(data:any){
 
@@ -129,6 +141,11 @@ export class AuthUsersService {
   public postAddProducts(data:any){
 
     return this.http.post(this.rootUrl + 'add_product', data);
+  }
+
+  public postAddServices(data:any){
+
+    return this.http.post(this.rootUrl + 'add_service', data);
   }
 
   public deleteBranches(Name:any){
@@ -173,6 +190,15 @@ export class AuthUsersService {
     queryParams = queryParams.append("Barcode",Barcode);
 
     return this.http.delete(this.rootUrl + 'delete_product',{params:queryParams});
+
+  }
+
+  public deleteServices(ID_Service:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Service ID",ID_Service);
+
+    return this.http.delete(this.rootUrl + 'delete_service',{params:queryParams});
 
   }
 }

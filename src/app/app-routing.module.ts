@@ -14,14 +14,12 @@ import { AdminServicesPageComponent } from './Pages/Admin/admin-services-page/ad
 import { ClientLandPageComponent } from './Pages/Client/client-land-page/client-land-page.component';
 import { ClientClassRegisterPageComponent } from './Pages/Client/client-class-register-page/client-class-register-page.component';
 
-import { BranchesManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/branches-management-page/branches-management-page.component';
-import { ShowAllBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/show-all-branches/show-all-branches.component';
-import { AddBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/add-branches/add-branches.component';
-import { ShowBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/show-branches/show-branches.component';
-import { DeleteBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/delete-branches/delete-branches.component';
+import { BranchesManagementPageComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/branches-management-page/branches-management-page.component';
+import { ShowAllBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/show-all-branches/show-all-branches.component';
+import { AddBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/add-branches/add-branches.component';
+import { ShowBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/show-branches/show-branches.component';
+import { DeleteBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/delete-branches/delete-branches.component';
 
-
-import { GymsManagementPageComponent } from './Pages/InnerAdmin/BranchGymPages/gyms-management-page/gyms-management-page.component';
 
 import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/inventory-management/inventory-management.component';
 import { AddInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/add-inventory/add-inventory.component';
@@ -50,7 +48,7 @@ import { EditInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/Invent
 import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
 import { ShowAllPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-all-payroll/show-all-payroll.component';
 import { EditPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/edit-payroll/edit-payroll.component';
-import { EditBranchesComponent } from './Pages/InnerAdmin/BranchGymPages/BranchesPages/edit-branches/edit-branches.component';
+import { EditBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/edit-branches/edit-branches.component';
 import { AddProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/add-products/add-products.component';
 import { EditProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/edit-products/edit-products.component';
 import { ShowProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-products/show-products.component';
@@ -58,6 +56,13 @@ import { ShowAllProductsComponent } from './Pages/InnerAdmin/ServicesPages/Produ
 import { DeleteProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/delete-products/delete-products.component';
 import { ShowAllEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-all-employee/show-all-employee.component';
 import { EditEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/edit-employee/edit-employee.component';
+import { ShowAllServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/show-all-services/show-all-services.component';
+import { AddServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/add-services/add-services.component';
+import { EditServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/edit-services/edit-services.component';
+import { DeleteServicesComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/delete-services/delete-services.component';
+import { ShopsManagementComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/shops-management/shops-management.component';
+import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/all-shops/all-shops.component';
+import { EditShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/edit-shops/edit-shops.component';
 
 
 const routes: Routes = [
@@ -127,8 +132,16 @@ const routes: Routes = [
     component: EditBranchesComponent
   },
   {
-    path:'GymsManagement',
-    component: GymsManagementPageComponent
+    path:'ShopsManagement',
+    component: ShopsManagementComponent
+  },
+  {
+    path:'ShowAllShops',
+    component: AllShopsComponent
+  },
+  {
+    path:'EditShops',
+    component: EditShopsComponent
   },
   {
     path:'InventoryManagement',
@@ -254,6 +267,22 @@ const routes: Routes = [
   {
     path:'ServicesManagement',
     component: ServicesManagementPageComponent
+  },
+  {
+    path:'ShowAllServices',
+    component: ShowAllServicesComponent
+  },
+  {
+    path:'AddServices',
+    component: AddServicesComponent
+  },
+  {
+    path:'EditServices',
+    component: EditServicesComponent
+  },
+  {
+    path:'DeleteServices',
+    component: DeleteServicesComponent
   },
   {
     path:'SpaTreatmentManagement',
