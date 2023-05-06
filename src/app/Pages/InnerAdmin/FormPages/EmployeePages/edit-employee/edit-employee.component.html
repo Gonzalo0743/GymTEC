@@ -1,1 +1,139 @@
-<p>edit-employee works!</p>
+<app-header-admin></app-header-admin>
+
+<div class="p-5 text-center">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+    <h1 class="mb-3">Edit Employee</h1>
+    <h4 class="mb-3">The "Employee ID" of the employee is the identifier to edit the specific employee.</h4>
+  </div>
+  <!-- Title -->
+
+  <form [formGroup]="editEmployeeForm" (ngSubmit)="proceedEditEmployee()">
+    <!--EmployeeID and BranchName -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_ID" id="form3Example1" class="form-control"/>
+            <label class="form-label" for="form3Example1">Employee ID</label>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Branch_Name" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Branch Name</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Province and District-->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_Province" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">Province</label>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_District" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">District</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Canton-->
+    <div class="form-outline">
+        <input type="text" formControlName="Employee_Canton" id="form3Example1" class="form-control" />
+        <label class="form-label" for="form3Example1">Canton</label>
+    </div>
+    
+
+    <!--Email and Password-->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_Email" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">Email</label>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_Password" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Password</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Fname and Mname-->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_Fname" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">First Name(1)</label>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_Mname" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">First Name(2)</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Lname1 and Lname2-->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_LName1" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">Last Name(1)</label>
+            </div>
+        </div>
+    
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_LName2" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Last Name(2)</label>
+            </div>
+        </div>
+    </div>
+
+    <!--WorkstationID and PayrollID-->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_Workstation_id" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">Workstation ID Name</label>
+            </div>
+        </div>
+    
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Employee_payroll_id" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Payroll ID</label>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    
+    <!-- Submit button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Edit</button>
+    </div>
+
+    <!-- Back button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" routerLink="/EmployeeManagement">Back</button>
+    </div>
+
+
+
+    
+</form>
+
+
+    

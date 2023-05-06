@@ -108,6 +108,11 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'all_shop');
   }
 
+  public getAllEmployee(){
+
+    return this.http.get(this.rootUrl + 'all_employee');
+  }
+
   
 
   //*Post* for add info
@@ -164,6 +169,11 @@ export class AuthUsersService {
   public putEditPayroll(data:any){
 
     return this.http.put(this.rootUrl + 'mod_payroll', data);
+  }
+
+  public putEditEmployee(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_employee', data);
   }
 
   //*Delete* for delete info
