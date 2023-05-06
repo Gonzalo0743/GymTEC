@@ -45,16 +45,6 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_gear',{params:queryParams});
   }
 
-  public getAllBranches(){
-
-    return this.http.get(this.rootUrl + 'all_branches');
-  }
-
-  public getAllGear(){
-
-    return this.http.get(this.rootUrl + 'all_gear');
-  }
-
   public getInventory(Serial_Number:any){
 
     let queryParams = new HttpParams();
@@ -69,6 +59,26 @@ export class AuthUsersService {
     queryParams = queryParams.append("EmployeeID",Employee_ID);
 
     return this.http.get(this.rootUrl + 'obt_employee',{params:queryParams});
+  }
+
+  public getAllBranches(){
+
+    return this.http.get(this.rootUrl + 'all_branches');
+  }
+
+  public getAllGear(){
+
+    return this.http.get(this.rootUrl + 'all_gear');
+  }
+
+  public getAllInventory(){
+
+    return this.http.get(this.rootUrl + 'all_inventories');
+  }
+
+  public getAllPayroll(){
+
+    return this.http.get(this.rootUrl + 'all_payrolls');
   }
 
 
@@ -95,6 +105,11 @@ export class AuthUsersService {
   public postAddGear(data:any){
 
     return this.http.post(this.rootUrl + 'add_gear', data);
+  }
+
+  public postAddPayroll(data:any){
+
+    return this.http.post(this.rootUrl + 'add_payroll', data);
   }
 
   public deleteBranches(Name:any){

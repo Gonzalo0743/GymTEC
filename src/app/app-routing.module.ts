@@ -45,6 +45,11 @@ import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/Pay
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/products-management-page/products-management-page.component';
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/services-management-page/services-management-page.component';
 import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
+import { ShowAllInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-all-inventory/show-all-inventory.component';
+import { EditInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/edit-inventory/edit-inventory.component';
+import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
+import { ShowAllPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-all-payroll/show-all-payroll.component';
+import { EditPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/edit-payroll/edit-payroll.component';
 
 
 const routes: Routes = [
@@ -133,6 +138,16 @@ const routes: Routes = [
 
   },
   {
+    path:'ShowAllInventory',
+    component: ShowAllInventoryComponent
+
+  },
+  {
+    path:'EditInventory',
+    component: EditInventoryComponent
+
+  },
+  {
     path:'GearManagement',
     component: GearManagementComponent
   },
@@ -179,6 +194,18 @@ const routes: Routes = [
   {
     path:'PayrollManagement',
     component: PayrollManagementPageComponent
+  },
+  {
+    path:'AddPayroll',
+    component: AddPayrollComponent
+  },
+  {
+    path:'ShowAllPayroll',
+    component: ShowAllPayrollComponent
+  },
+  {
+    path:'EditPayroll',
+    component: EditPayrollComponent
   },
   {
     path:'ProductsManagement',
