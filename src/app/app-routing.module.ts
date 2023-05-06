@@ -29,6 +29,11 @@ import { ShowInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/Invent
 import { DeleteInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/delete-inventory/delete-inventory.component';
 
 import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/gear-management/gear-management.component';
+import { AddGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/add-gear/add-gear.component';
+import { ShowAllGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/show-all-gear/show-all-gear.component';
+import { ShowGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/show-gear/show-gear.component';
+import { EditGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/edit-gear/edit-gear.component';
+import { DeleteGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages/delete-gear/delete-gear.component';
 
 import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/employee-management-page/employee-management-page.component';
 import { AddEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/add-employee/add-employee.component';
@@ -130,6 +135,26 @@ const routes: Routes = [
   {
     path:'GearManagement',
     component: GearManagementComponent
+  },
+  {
+    path:'AddGear',
+    component: AddGearComponent
+  },
+  {
+    path:'ShowGear',
+    component: ShowGearComponent
+  },
+  {
+    path:'ShowAllGear',
+    component: ShowAllGearComponent
+  },
+  {
+    path:'EditGear',
+    component: EditGearComponent
+  },
+  {
+    path:'DeleteGear',
+    component: DeleteGearComponent
   },
   {
     path:'EmployeeManagement',

@@ -37,9 +37,22 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_branch',{params:queryParams});
   }
 
+  public getGear(gear_ID:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Gear ID",gear_ID);
+
+    return this.http.get(this.rootUrl + 'obt_gear',{params:queryParams});
+  }
+
   public getAllBranches(){
 
     return this.http.get(this.rootUrl + 'all_branches');
+  }
+
+  public getAllGear(){
+
+    return this.http.get(this.rootUrl + 'all_gear');
   }
 
   public getInventory(Serial_Number:any){
@@ -79,6 +92,11 @@ export class AuthUsersService {
     return this.http.post(this.rootUrl + 'add_inventory', data);
   }
 
+  public postAddGear(data:any){
+
+    return this.http.post(this.rootUrl + 'add_gear', data);
+  }
+
   public deleteBranches(Name:any){
 
     let queryParams = new HttpParams();
@@ -103,6 +121,15 @@ export class AuthUsersService {
     queryParams = queryParams.append("EmployeeID",Employee_ID);
 
     return this.http.delete(this.rootUrl + 'delete_employee',{params:queryParams});
+
+  }
+
+  public deleteGear(gear_ID:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("GearID",gear_ID);
+
+    return this.http.delete(this.rootUrl + 'delete_gear',{params:queryParams});
 
   }
 }
