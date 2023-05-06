@@ -1,1 +1,55 @@
-<p>edit-payroll works!</p>
+<app-header-admin></app-header-admin>
+
+<!-- Title -->
+<div class="p-5 text-center">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+    <h1 class="mb-3">Edit Payroll</h1>
+    <h4 class="mb-3">The "Payroll ID" of the payroll is the identifier to edit the specific payroll.</h4>
+  </div>
+  <!-- Title -->
+
+  <form [formGroup]="editPayrollForm" (ngSubmit)="proceedEditPayroll()">
+
+    <!--ID Payroll and Payroll_Type -->
+    <div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="number" formControlName="ID_Payroll" id="form3Example1" class="form-control"/>
+        <label class="form-label" for="form3Example1">Payroll ID</label>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="Payroll_Type" id="form3Example2" class="form-control" />
+        <label class="form-label" for="form3Example2">Payroll Type</label>
+        </div>
+    </div>
+    </div>
+
+    <!--Description-->
+    <div class="form-outline">
+        <input type="text" formControlName="Description" id="form3Example1" class="form-control" />
+        <label class="form-label" for="form3Example1">Description</label>
+    </div>
+    
+
+
+    
+    <!-- Submit button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Edit</button>
+    </div>
+
+    <!-- Back button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" routerLink="/PayrollManagement">Back</button>
+    </div>
+
+
+
+    
+</form>
+
+
+    

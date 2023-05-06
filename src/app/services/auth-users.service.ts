@@ -10,6 +10,8 @@ export class AuthUsersService {
 
   constructor(private http:HttpClient) { }
 
+  //*Gets* for show specific info
+
   public getClients(email:any, password:any){
 
     let queryParams = new HttpParams();
@@ -69,6 +71,7 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_product',{params:queryParams});
   }
 
+  //*Gets* for show all the names
 
   public getAllBranches(){
 
@@ -107,7 +110,7 @@ export class AuthUsersService {
 
   
 
-
+  //*Post* for add info
   public postAddClient(data:any){
 
     return this.http.post(this.rootUrl + 'add_client', data);
@@ -147,7 +150,23 @@ export class AuthUsersService {
 
     return this.http.post(this.rootUrl + 'add_service', data);
   }
+  //*Put* for edit info
+  public putEditBranches(data:any){
 
+    return this.http.put(this.rootUrl + 'mod_branch', data);
+  }
+
+  public putEditShops(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_shop', data);
+  }
+
+  public putEditPayroll(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_payroll', data);
+  }
+
+  //*Delete* for delete info
   public deleteBranches(Name:any){
 
     let queryParams = new HttpParams();
