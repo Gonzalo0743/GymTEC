@@ -12,14 +12,14 @@ export class DeleteBranchesComponent {
 
   constructor(private builder: FormBuilder, private service: AuthUsersService){}
 
-  jsonResponse: any;
+  json: any;
 
   /**
    * Form that will be used to send the information to the auth-users.specs.ts
    */
 
   DeleteBranchesForm = this.builder.group({
-  Name: this.builder.control('', Validators.required)})
+    Name: this.builder.control('', Validators.required)})
 
 
   /**
@@ -34,13 +34,13 @@ export class DeleteBranchesComponent {
       
       if(this.DeleteBranchesForm.valid){
 
-        this.service.deleteBranches( this.DeleteBranchesForm.value.Name ).subscribe(item => {
+        this.service.deleteBranches(this.DeleteBranchesForm.value.Name).subscribe(item => {
 
-          this.jsonResponse = item;
+          this.json = item;
 
-          if (this.jsonResponse.status == "ok"){
+          if (this.json.status == "ok"){
 
-            console.log(this.jsonResponse);
+            console.log(this.json);
 
           }else {
             
