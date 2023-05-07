@@ -71,6 +71,14 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'obt_product',{params:queryParams});
   }
 
+  public getProductShops(Name:any){
+
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Name",Name);
+
+    return this.http.get(this.rootUrl + 'obt_shop_product',{params:queryParams});
+  }
+
   //*Gets* for show all the names
 
   public getAllBranches(){

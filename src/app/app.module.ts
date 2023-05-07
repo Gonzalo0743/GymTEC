@@ -76,7 +76,7 @@ import { EditShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPag
 import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/all-shops/all-shops.component';
 import { LessonsManagementComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/lessons-management/lessons-management.component';
 import { AddLessonsComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/add-lessons/add-lessons.component';
-import { ShowAllShopProductsComponent } from './Pages/InnerAdmin/BranchShopPages/ShopsPages/show-all-shop-products/show-all-shop-products.component';
+import { ShowProductsShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/show-products-shops/show-products-shops.component';
 
 
 
@@ -84,6 +84,7 @@ import { ShowAllShopProductsComponent } from './Pages/InnerAdmin/BranchShopPages
 @NgModule({
   declarations: [
     AppComponent,
+    
     FooterComponent,
     MainPageComponent,
     LoginAdminComponent,
@@ -149,7 +150,7 @@ import { ShowAllShopProductsComponent } from './Pages/InnerAdmin/BranchShopPages
     AllShopsComponent,
     LessonsManagementComponent,
     AddLessonsComponent,
-    ShowAllShopProductsComponent,
+    ShowProductsShopsComponent,
 
 
     

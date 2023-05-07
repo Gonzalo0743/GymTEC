@@ -65,6 +65,7 @@ import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPage
 import { EditShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/edit-shops/edit-shops.component';
 import { LessonsManagementComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/lessons-management/lessons-management.component';
 import { AddLessonsComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/add-lessons/add-lessons.component';
+import { ShowProductsShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/show-products-shops/show-products-shops.component';
 
 
 const routes: Routes = [
@@ -152,6 +153,10 @@ const routes: Routes = [
   {
     path:'EditShops',
     component: EditShopsComponent
+  },
+  {
+    path:'ShowProductShops',
+    component: ShowProductsShopsComponent
   },
   {
     path:'InventoryManagement',
