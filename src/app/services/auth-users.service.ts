@@ -155,6 +155,11 @@ export class AuthUsersService {
 
     return this.http.post(this.rootUrl + 'add_service', data);
   }
+
+  public postAddLessons(data:any){
+
+    return this.http.post(this.rootUrl + 'add_lesson', data);
+  }
   //*Put* for edit info
   public putEditBranches(data:any){
 
@@ -174,6 +179,26 @@ export class AuthUsersService {
   public putEditEmployee(data:any){
 
     return this.http.put(this.rootUrl + 'mod_employee', data);
+  }
+
+  public putEditGear(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_gear', data);
+  }
+
+  public putEditProducts(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_product', data);
+  }
+
+  public putEditServices(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_service', data);
+  }
+
+  public putEditInventory(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_inventory', data);
   }
 
   //*Delete* for delete info

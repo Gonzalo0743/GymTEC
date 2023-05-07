@@ -63,6 +63,8 @@ import { DeleteServicesComponent } from './Pages/InnerAdmin/ServicesPages/Servic
 import { ShopsManagementComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/shops-management/shops-management.component';
 import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/all-shops/all-shops.component';
 import { EditShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/edit-shops/edit-shops.component';
+import { LessonsManagementComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/lessons-management/lessons-management.component';
+import { AddLessonsComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/add-lessons/add-lessons.component';
 
 
 const routes: Routes = [
@@ -106,6 +108,14 @@ const routes: Routes = [
   {
     path:'ClientClassRegisterPage',
     component: ClientClassRegisterPageComponent
+  },
+  {
+    path:'LessonsManagement',
+    component: LessonsManagementComponent
+  },
+  {
+    path:'AddLessons',
+    component: AddLessonsComponent
   },
   {
     path:'BranchesManagement',

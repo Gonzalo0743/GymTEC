@@ -20,6 +20,7 @@ export class AddGearComponent {
       Name: this.builder.control('', Validators.required),
       Description: this.builder.control('', Validators.required),
       gear_ID: this.builder.control(0, Validators.required),
+      Gear_Type: this.builder.control('',Validators.required),
       
 
     })

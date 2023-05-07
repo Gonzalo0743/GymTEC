@@ -74,6 +74,9 @@ import { EditServicesComponent } from './Pages/InnerAdmin/ServicesPages/Services
 import { ShopsManagementComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/shops-management/shops-management.component';
 import { EditShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/edit-shops/edit-shops.component';
 import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/all-shops/all-shops.component';
+import { LessonsManagementComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/lessons-management/lessons-management.component';
+import { AddLessonsComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/add-lessons/add-lessons.component';
+import { ShowAllShopProductsComponent } from './Pages/InnerAdmin/BranchShopPages/ShopsPages/show-all-shop-products/show-all-shop-products.component';
 
 
 
@@ -144,6 +147,9 @@ import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPage
     ShopsManagementComponent,
     EditShopsComponent,
     AllShopsComponent,
+    LessonsManagementComponent,
+    AddLessonsComponent,
+    ShowAllShopProductsComponent,
 
 
     

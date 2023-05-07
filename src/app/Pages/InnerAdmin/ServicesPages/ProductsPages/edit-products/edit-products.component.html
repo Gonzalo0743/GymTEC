@@ -1,1 +1,70 @@
-<p>edit-products works!</p>
+<app-header-admin></app-header-admin>
+
+<!-- Title -->
+<div class="p-5 text-center">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+    <h1 class="mb-3">Edit Products</h1>
+    <h4 class="mb-3">The "Barcode" of the product is the identifier to edit the specific product.</h4>
+  </div>
+  <!-- Title -->
+
+  <form [formGroup]="editProductsForm" (ngSubmit)="proceedEditProducts()">
+    <!--Name and Barcode -->
+    <div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="Name" id="form3Example1" class="form-control"/>
+        <label class="form-label" for="form3Example1">Name</label>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="Barcode" id="form3Example2" class="form-control" />
+        <label class="form-label" for="form3Example2">Barcode</label>
+        </div>
+    </div>
+    </div>
+
+    <!--Price and Branch Name-->
+    <div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="number" formControlName="price" id="form3Example1" class="form-control" />
+        <label class="form-label" for="form3Example1">Price</label>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="branch_Name" id="form3Example2" class="form-control" />
+        <label class="form-label" for="form3Example2">Branch Name</label>
+        </div>
+    </div>
+    </div>
+
+    <!--Description-->
+    <div class="form-outline">
+    <input type="text" formControlName="Description" id="form3Example1" class="form-control" />
+    <label class="form-label" for="form3Example1">Description</label>
+    </div>
+    
+
+
+    
+    <!-- Submit button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Edit</button>
+    </div>
+
+    <!-- Back button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" routerLink="/ProductsManagement">Back</button>
+    </div>
+
+
+
+    
+</form>
+
+
+    

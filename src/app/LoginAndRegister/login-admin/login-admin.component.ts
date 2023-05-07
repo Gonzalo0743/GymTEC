@@ -24,6 +24,7 @@ export class LoginAdminComponent {
 
         this.service.getAdmins(this.loginAdminForm.value.ID_Credentials, this.loginAdminForm.value.Password).subscribe(item =>{
           this.jsonResponse = item;
+          
 
           //Revisar si ese "Ok" se escribe exactamente igual
           if(this.jsonResponse.status == "ok"){

@@ -1,1 +1,64 @@
-<p>edit-gear works!</p>
+<app-header-admin></app-header-admin>
+
+<!-- Title -->
+<div class="p-5 text-center">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+    <h1 class="mb-3">Edit Gear</h1>
+    <h4 class="mb-3">The "Gear ID" of the gear is the identifier to edit the specific gear.</h4>
+  </div>
+  <!-- Title -->
+
+  <form [formGroup]="editGearForm" (ngSubmit)="proceedEditGear()">
+    <!--Name and GearID -->
+    <div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="Name" id="form3Example1" class="form-control"/>
+        <label class="form-label" for="form3Example1">Name</label>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="number" formControlName="gear_ID" id="form3Example2" class="form-control" />
+        <label class="form-label" for="form3Example2">Gear ID</label>
+        </div>
+    </div>
+    </div>
+
+    <!--Description and Gear Type -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Description" id="form3Example1" class="form-control"/>
+            <label class="form-label" for="form3Example1">Description</label>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+            <input type="text" formControlName="Gear_Type" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Gear Type</label>
+            </div>
+        </div>
+        </div>
+    
+
+
+    
+    <!-- Submit button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Edit</button>
+    </div>
+
+    <!-- Back button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" routerLink="/GearManagement">Back</button>
+    </div>
+
+
+
+    
+</form>
+
+
+    

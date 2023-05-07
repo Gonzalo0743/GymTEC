@@ -20,9 +20,6 @@ export class AddInventoryComponent {
       Brand: this.builder.control('', Validators.required),
       Serial_Number: this.builder.control(0, Validators.required),
       Price: this.builder.control('', Validators.required),
-      gear_ID: this.builder.control(0, Validators.required),
-      gear_Name: this.builder.control('', Validators.required),
-      gear_Type: this.builder.control('', Validators.required),
       
 
     })

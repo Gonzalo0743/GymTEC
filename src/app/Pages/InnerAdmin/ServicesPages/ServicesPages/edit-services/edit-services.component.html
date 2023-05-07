@@ -1,1 +1,49 @@
-<p>edit-services works!</p>
+<app-header-admin></app-header-admin>
+
+<!-- Title -->
+<div class="p-5 text-center">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+    <h1 class="mb-3">Edit Services</h1>
+    <h4 class="mb-3">The "Service ID" of the service is the identifier to edit the specific service.</h4>
+  </div>
+  <!-- Title -->
+
+  <form [formGroup]="editServicesForm" (ngSubmit)="proceedEditServices()">
+    <!--Name and MaxSize -->
+    <div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="ID_Service" id="form3Example1" class="form-control"/>
+        <label class="form-label" for="form3Example1">Service ID</label>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <input type="text" formControlName="Description" id="form3Example2" class="form-control" />
+        <label class="form-label" for="form3Example2">Descrption </label>
+        </div>
+    </div>
+    </div>
+
+    
+
+
+    
+    <!-- Submit button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Edit</button>
+    </div>
+
+    <!-- Back button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" routerLink="/ServicesManagement">Back</button>
+    </div>
+
+
+
+    
+</form>
+
+
+    
