@@ -12,21 +12,21 @@ export class AuthUsersService {
 
   //*Gets* for show specific info
 
-  public getClients(email:any, password:any){
+  public getClients(ID_Credentials:any, Password:any){
 
     let queryParams = new HttpParams();
-    queryParams = queryParams.append("email",email);
-    queryParams = queryParams.append("password",password);
+    queryParams = queryParams.append("ID_Credentials",ID_Credentials);
+    queryParams = queryParams.append("Password",Password);
 
     return this.http.get(this.rootUrl + 'auth_cliente',{params:queryParams});
   }
 
 
-  public getAdmins(email:any, password:any){
+  public getAdmins(ID_Credentials:any, Password:any){
 
     let queryParams = new HttpParams();
-    queryParams = queryParams.append("email",email);
-    queryParams = queryParams.append("password",password);
+    queryParams = queryParams.append("ID_Credentials",ID_Credentials);
+    queryParams = queryParams.append("Password",Password);
 
     return this.http.get(this.rootUrl + 'auth_employee',{params:queryParams});
   }
