@@ -12,7 +12,7 @@ export class ShowBranchesComponent {
 
   constructor(private builder: FormBuilder, private service: AuthUsersService){}
 
-    jsonResponse: any;
+    json: any;
     response:any;
 
     ShowBranchesForm = this.builder.group({
@@ -27,11 +27,11 @@ export class ShowBranchesComponent {
 
         this.service.getBranches(this.ShowBranchesForm.value.Name).subscribe(item =>{
 
-          this.jsonResponse = item;
+          this.json = item;
 
-          if (this.jsonResponse.status == "ok"){
-            console.log(this.jsonResponse);
-            this.response = JSON.stringify(this.jsonResponse);
+          if (this.json.status == "ok"){
+            console.log(this.json);
+            this.response = JSON.stringify(this.json);
 
           }
           else{
