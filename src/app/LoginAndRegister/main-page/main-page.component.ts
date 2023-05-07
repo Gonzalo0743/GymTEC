@@ -13,7 +13,7 @@ export class MainPageComponent {
   constructor(private builder: FormBuilder, private service: AuthUsersService, 
     private router: Router){}
     
-    jsonResponse: any;
+    JSON_Object: any;
 
     loginClientForm = this.builder.group({
       ID_Credentials: this.builder.control('', Validators.required),
@@ -24,11 +24,11 @@ export class MainPageComponent {
       if(this.loginClientForm.valid){
 
         this.service.getClients(this.loginClientForm.value.ID_Credentials, this.loginClientForm.value.Password).subscribe(item =>{
-          this.jsonResponse = item;
-          console.log(this.jsonResponse);
+          this.JSON_Object = item;
+          console.log(this.JSON_Object);
 
           //Revisar si ese "Ok" se escribe exactamente igual
-          if(this.jsonResponse.status == "ok"){
+          if(this.JSON_Object.status == "ok"){
             this.router.navigate(['/ClientLandPage']);
             console.log("Login Succesful");
           }
