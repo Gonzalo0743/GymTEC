@@ -18,7 +18,7 @@ export class AuthUsersService {
     queryParams = queryParams.append("ID_Credentials",ID_Credentials);
     queryParams = queryParams.append("Password",Password);
 
-    return this.http.get(this.rootUrl + 'auth_cliente',{params:queryParams});
+    return this.http.post(this.rootUrl + 'auth_cliente',{params:queryParams});
   }
 
 
@@ -28,7 +28,7 @@ export class AuthUsersService {
     queryParams = queryParams.append("ID_Credentials",ID_Credentials);
     queryParams = queryParams.append("Password",Password);
 
-    return this.http.get(this.rootUrl + 'auth_employee',{params:queryParams});
+    return this.http.post(this.rootUrl + 'auth_employee',{params:queryParams});
   }
 
   public getBranches(Name:any){
