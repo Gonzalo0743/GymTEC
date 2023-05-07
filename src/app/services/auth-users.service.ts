@@ -36,7 +36,7 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("Name",Name);
 
-    return this.http.get(this.rootUrl + 'obt_branch',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_branch',{params:queryParams});
   }
 
   public getGear(gear_ID:any){
@@ -44,7 +44,7 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("Gear ID",gear_ID);
 
-    return this.http.get(this.rootUrl + 'obt_gear',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_gear',{params:queryParams});
   }
 
   public getInventory(Serial_Number:any){
@@ -52,7 +52,7 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("SerialNumber",Serial_Number);
 
-    return this.http.get(this.rootUrl + 'obt_inventory',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_inventory',{params:queryParams});
   }
 
   public getEmployee(Employee_ID:any){
@@ -60,7 +60,7 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("EmployeeID",Employee_ID);
 
-    return this.http.get(this.rootUrl + 'obt_employee',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_employee',{params:queryParams});
   }
 
   public getProducts(Barcode:any){
@@ -68,7 +68,7 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("Barcode",Barcode);
 
-    return this.http.get(this.rootUrl + 'obt_product',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_product',{params:queryParams});
   }
 
   public getProductShops(Name:any){
@@ -76,7 +76,7 @@ export class AuthUsersService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("Name",Name);
 
-    return this.http.get(this.rootUrl + 'obt_shop_product',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_shop_product',{params:queryParams});
   }
 
   //*Gets* for show all the names
