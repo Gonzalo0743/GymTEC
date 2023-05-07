@@ -42,7 +42,6 @@ import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-man
 import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/payroll-management-page/payroll-management-page.component';
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/products-management-page/products-management-page.component';
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/services-management-page/services-management-page.component';
-import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
 import { ShowAllInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-all-inventory/show-all-inventory.component';
 import { EditInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/edit-inventory/edit-inventory.component';
 import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
@@ -66,6 +65,10 @@ import { EditShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPag
 import { LessonsManagementComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/lessons-management/lessons-management.component';
 import { AddLessonsComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/add-lessons/add-lessons.component';
 import { ShowProductsShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/show-products-shops/show-products-shops.component';
+import { ShowAllSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/show-all-spa/show-all-spa.component';
+import { EditSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/edit-spa/edit-spa.component';
+import { ShowSpaTreatmentComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/show-spa-treatment/show-spa-treatment.component';
+import { SpaManegementComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/spa-manegement/spa-manegement.component';
 
 
 const routes: Routes = [
@@ -300,9 +303,22 @@ const routes: Routes = [
     component: DeleteServicesComponent
   },
   {
-    path:'SpaTreatmentManagement',
-    component: SpaTreatmentManagementPageComponent
-  }
+    path:'ShowAllSpa',
+    component: ShowAllSpaComponent
+  },
+  {
+    path:'EditSpa',
+    component: EditSpaComponent
+  },
+  {
+    path:'ShowSpaTreatment',
+    component: ShowSpaTreatmentComponent
+  },
+  {
+    path:'SpaManagement',
+    component: SpaManegementComponent
+  },
+
   
   
 ];

@@ -25,10 +25,12 @@ export class MainPageComponent {
 
         this.service.getClients(this.loginClientForm.value.ID_Credentials, this.loginClientForm.value.Password).subscribe(item =>{
           this.jsonResponse = item;
+          console.log(this.jsonResponse);
 
           //Revisar si ese "Ok" se escribe exactamente igual
           if(this.jsonResponse.status == "ok"){
             this.router.navigate(['/ClientLandPage']);
+            console.log("Login Succesful");
           }
           else{
             this.loginClientForm.setErrors({unauthenticated: true});

@@ -121,6 +121,11 @@ export class AuthUsersService {
     return this.http.get(this.rootUrl + 'all_employee');
   }
 
+  public getAllSpa(){
+
+    return this.http.get(this.rootUrl + 'all_spa');
+  }
+
   
 
   //*Post* for add info

@@ -36,7 +36,7 @@ import { GearManagementComponent } from './Pages/InnerAdmin/EquipmentPages/GearP
 import { InventoryManagementComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/inventory-management/inventory-management.component';
 import { AddInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/add-inventory/add-inventory.component';
 
-import { SpaTreatmentManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/spa-treatment-management-page/spa-treatment-management-page.component';
+
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/services-management-page/services-management-page.component';
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/products-management-page/products-management-page.component';
 import { ClientLandPageComponent } from './Pages/Client/client-land-page/client-land-page.component';
@@ -77,6 +77,10 @@ import { AllShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPage
 import { LessonsManagementComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/lessons-management/lessons-management.component';
 import { AddLessonsComponent } from './Pages/InnerAdmin/ServicesPages/LessonsPages/add-lessons/add-lessons.component';
 import { ShowProductsShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/ShopsPages/show-products-shops/show-products-shops.component';
+import { ShowAllSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/show-all-spa/show-all-spa.component';
+import { EditSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/edit-spa/edit-spa.component';
+import { ShowSpaTreatmentComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/show-spa-treatment/show-spa-treatment.component';
+import { SpaManegementComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/spa-manegement/spa-manegement.component';
 
 
 
@@ -108,7 +112,6 @@ import { ShowProductsShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/
     InventoryManagementComponent,
     AddInventoryComponent,
 
-    SpaTreatmentManagementPageComponent,
     ServicesManagementPageComponent,
     ProductsManagementPageComponent,
 
@@ -151,6 +154,10 @@ import { ShowProductsShopsComponent } from './Pages/InnerAdmin/BranchShopsPages/
     LessonsManagementComponent,
     AddLessonsComponent,
     ShowProductsShopsComponent,
+    ShowAllSpaComponent,
+    EditSpaComponent,
+    ShowSpaTreatmentComponent,
+    SpaManegementComponent,
 
 
     
