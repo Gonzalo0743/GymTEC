@@ -12,7 +12,7 @@ export class LoginAdminComponent {
   constructor(private builder: FormBuilder, private service: AuthUsersService, 
     private router: Router){}
     
-    jsonResponse: any;
+    json: any;
 
     loginAdminForm = this.builder.group({
       ID_Credentials: this.builder.control('', Validators.required),
@@ -23,11 +23,11 @@ export class LoginAdminComponent {
       if(this.loginAdminForm.valid){
 
         this.service.getAdmins(this.loginAdminForm.value.ID_Credentials, this.loginAdminForm.value.Password).subscribe(item =>{
-          this.jsonResponse = item;
+          this.json = item;
           
 
           //Revisar si ese "Ok" se escribe exactamente igual
-          if(this.jsonResponse.status == "ok"){
+          if(this.json.status == "ok"){
             this.router.navigate(['/AdminLandPage']);
           }
           else{

@@ -23,7 +23,9 @@ export class MainPageComponent {
     proceedClientLogin(){
       if(this.loginClientForm.valid){
 
-        this.service.getClients(this.loginClientForm.value.ID_Credentials, this.loginClientForm.value.Password).subscribe(item =>{
+        let formObj = this.loginClientForm.getRawValue();
+
+        this.service.getClients(formObj).subscribe(item =>{
           this.json = item;
           console.log(this.json);
 
@@ -31,6 +33,7 @@ export class MainPageComponent {
           if(this.json.status == "ok"){
             this.router.navigate(['/ClientLandPage']);
             console.log("Login Succesful");
+
           }
           else{
             this.loginClientForm.setErrors({unauthenticated: true});

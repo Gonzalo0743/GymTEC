@@ -27,7 +27,6 @@ export class DeleteBranchesComponent {
    */
   
   proceedDeleteBranches(){
-
     let formObj = this.DeleteBranchesForm.getRawValue();
 
       console.log(formObj);

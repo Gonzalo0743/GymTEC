@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,13 +12,9 @@ export class AuthUsersService {
 
   //*Gets* for show specific info
 
-  public getClients(ID_Credentials:any, Password:any){
+  public getClients(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("ID_Credentials",ID_Credentials);
-    queryParams = queryParams.append("Password",Password);
-
-    return this.http.post(this.rootUrl + 'auth_cliente',{params:queryParams});
+    return this.http.post(this.rootUrl + 'auth_cliente',data);
   }
 
 
@@ -217,13 +213,10 @@ export class AuthUsersService {
   //*Delete* for delete info
   public deleteBranches(Name:any){
 
-    let Options = {
-      headers: new HttpHeaders({
-        'Content-type': 'application/json',
-      }), body: Name,
-    }
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("Name",Name);
 
-    return this.http.delete(this.rootUrl + 'delete_branch', Options);
+    return this.http.delete(this.rootUrl + 'delete_branch',{params:queryParams});
 
   }
 
