@@ -33,7 +33,7 @@ export class DeleteBranchesComponent {
       
       if(this.DeleteBranchesForm.valid){
 
-        this.service.deleteBranches(this.DeleteBranchesForm.value.Name).subscribe(item => {
+        this.service.deleteBranches(formObj).subscribe(item => {
 
           this.json = item;
 

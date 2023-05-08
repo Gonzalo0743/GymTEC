@@ -204,12 +204,9 @@ export class AuthUsersService {
   }
 
   //*Delete* for delete info
-  public deleteBranches(Name:any){
+  public deleteBranches(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Name",Name);
-
-    return this.http.delete(this.rootUrl + 'delete_branch',{params:queryParams});
+    return this.http.delete(this.rootUrl + 'delete_branch',data);
 
   }
 
