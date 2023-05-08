@@ -44,6 +44,7 @@ export class DeleteBranchesComponent {
           }else {
             
             this.DeleteBranchesForm.setErrors({ unauthenticated: true });
+            console.log("MANDELE FAYAH");
           }
         })
       }
