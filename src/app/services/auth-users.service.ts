@@ -188,6 +188,11 @@ export class AuthUsersService {
     return this.http.put(this.rootUrl + 'mod_inventory', data);
   }
 
+  public putEditSpa(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_spa', data);
+  }
+
   //*Delete* for delete info
   public deleteBranches(data:any){
 
