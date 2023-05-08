@@ -25,7 +25,10 @@ export class ShowGearComponent {
     proceedShowGear(){
       if(this.ShowGearForm.valid){
 
-        this.service.getGear(this.ShowGearForm.value.gear_ID).subscribe(item =>{
+        let formObj = this.ShowGearForm.getRawValue();
+
+        this.service.getGear(formObj).subscribe(item =>{
+          
 
           this.jsonResponse = item;
 

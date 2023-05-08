@@ -28,44 +28,29 @@ export class AuthUsersService {
     return this.http.post(this.rootUrl + 'obt_branch',data);
   }
 
-  public getGear(gear_ID:any){
+  public getGear(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Gear ID",gear_ID);
-
-    return this.http.post(this.rootUrl + 'obt_gear',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_gear',data);
   }
 
-  public getInventory(Serial_Number:any){
+  public getInventory(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("SerialNumber",Serial_Number);
-
-    return this.http.post(this.rootUrl + 'obt_inventory',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_inventory',data);
   }
 
-  public getEmployee(Employee_ID:any){
+  public getEmployee(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("EmployeeID",Employee_ID);
-
-    return this.http.post(this.rootUrl + 'obt_employee',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_employee',data);
   }
 
-  public getProducts(Barcode:any){
+  public getProducts(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Barcode",Barcode);
-
-    return this.http.post(this.rootUrl + 'obt_product',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_product',data);
   }
 
-  public getProductShops(Name:any){
+  public getProductShops(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Name",Name);
-
-    return this.http.post(this.rootUrl + 'obt_shop_product',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_shop_product',data);
   }
 
   //*Gets* for show all the names
@@ -210,48 +195,34 @@ export class AuthUsersService {
 
   }
 
-  public deleteInventory(SerialNumber:any){
+  public deleteInventory(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("SerialNumber",SerialNumber);
-
-    return this.http.delete(this.rootUrl + 'delete_inventory',{params:queryParams});
+    return this.http.delete(this.rootUrl + 'delete_inventory',data);
 
   }
 
-  public deleteEmployee(Employee_ID:any){
+  public deleteEmployee(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("EmployeeID",Employee_ID);
 
-    return this.http.delete(this.rootUrl + 'delete_employee',{params:queryParams});
+    return this.http.delete(this.rootUrl + 'delete_employee',data);
 
   }
 
-  public deleteGear(gear_ID:any){
+  public deleteGear(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("GearID",gear_ID);
-
-    return this.http.delete(this.rootUrl + 'delete_gear',{params:queryParams});
+    return this.http.delete(this.rootUrl + 'delete_gear',data);
 
   }
 
-  public deleteProducts(Barcode:any){
+  public deleteProducts(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Barcode",Barcode);
-
-    return this.http.delete(this.rootUrl + 'delete_product',{params:queryParams});
+    return this.http.delete(this.rootUrl + 'delete_product',data);
 
   }
 
-  public deleteServices(ID_Service:any){
+  public deleteServices(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Service ID",ID_Service);
-
-    return this.http.delete(this.rootUrl + 'delete_service',{params:queryParams});
+    return this.http.delete(this.rootUrl + 'delete_service',data);
 
   }
 }

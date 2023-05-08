@@ -25,7 +25,9 @@ export class ShowEmployeeComponent {
     proceedShowEmployee(){
       if(this.ShowEmployeeForm.valid){
 
-        this.service.getEmployee(this.ShowEmployeeForm.value.Employee_ID).subscribe(item =>{
+        let formObj = this.ShowEmployeeForm.getRawValue();
+
+        this.service.getEmployee(formObj).subscribe(item =>{
 
           this.jsonResponse = item;
 

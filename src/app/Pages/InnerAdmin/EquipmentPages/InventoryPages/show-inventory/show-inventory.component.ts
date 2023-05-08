@@ -25,7 +25,9 @@ export class ShowInventoryComponent {
     proceedShowInventory(){
       if(this.ShowInventoryForm.valid){
 
-        this.service.getInventory(this.ShowInventoryForm.value.Serial_Number).subscribe(item =>{
+        let formObj = this.ShowInventoryForm.getRawValue();
+
+        this.service.getInventory(formObj).subscribe(item =>{
 
           this.jsonResponse = item;
 

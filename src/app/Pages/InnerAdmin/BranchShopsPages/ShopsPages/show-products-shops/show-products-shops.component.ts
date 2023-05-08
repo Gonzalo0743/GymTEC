@@ -25,7 +25,9 @@ export class ShowProductsShopsComponent {
   proceedShowProductsShops(){
     if(this.ShowProductsShopsForm.valid){
 
-      this.service.getProductShops(this.ShowProductsShopsForm.value.Name).subscribe(item =>{
+      let formObj = this.ShowProductsShopsForm.getRawValue();
+
+      this.service.getProductShops(formObj).subscribe(item =>{
 
         this.jsonResponse = item;
 
