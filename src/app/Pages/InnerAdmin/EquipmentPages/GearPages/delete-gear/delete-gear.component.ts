@@ -27,14 +27,11 @@ export class DeleteGearComponent {
    */
   
   proceedDeleteGear(){
-
-    let formObj = this.DeleteGearForm.getRawValue();
-
-      console.log(formObj);
       
       if(this.DeleteGearForm.valid){
+        let formObj = this.DeleteGearForm.getRawValue();
 
-        this.service.deleteGear( this.DeleteGearForm.value.gear_ID).subscribe(item => {
+        this.service.deleteGear(formObj).subscribe(item => {
 
           this.jsonResponse = item;
 

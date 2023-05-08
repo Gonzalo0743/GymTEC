@@ -44,9 +44,13 @@ export class DeleteBranchesComponent {
           }else {
             
             this.DeleteBranchesForm.setErrors({ unauthenticated: true });
-            console.log("MANDELE FAYAH");
+            
           }
         })
+      }
+      else{
+        console.log("Error, branch name didnt exist")
+        console.log("MANDELE FAYAH");
       }
     }
 
