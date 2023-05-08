@@ -33,7 +33,7 @@ export class EditInventoryComponent {
         this.service.putEditInventory(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/InventoryManagement']);
         })
       }
       else{

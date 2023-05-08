@@ -42,7 +42,7 @@ export class AddEmployeeComponent {
         this.service.postAddEmployee(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/EmployeeManagement']);
         })
       }
       else{

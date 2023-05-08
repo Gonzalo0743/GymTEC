@@ -34,7 +34,7 @@ export class AddProductsComponent {
         this.service.postAddProducts(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/ProductsManagement']);
         })
       }
       else{

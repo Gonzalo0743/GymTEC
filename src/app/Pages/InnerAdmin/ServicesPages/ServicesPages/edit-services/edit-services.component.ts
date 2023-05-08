@@ -33,7 +33,7 @@ export class EditServicesComponent {
         this.service.putEditServices(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/ServicesManagement']);
         })
       }
       else{

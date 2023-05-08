@@ -32,7 +32,7 @@ export class AddInventoryComponent {
         this.service.postAddInventory(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/InventoryManagement']);
         })
       }
       else{

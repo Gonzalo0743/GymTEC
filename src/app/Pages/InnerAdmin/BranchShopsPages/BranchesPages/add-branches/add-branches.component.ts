@@ -35,7 +35,7 @@ export class AddBranchesComponent {
         this.service.postAddBranches(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/BranchesManagement']);
         })
       }
       else{

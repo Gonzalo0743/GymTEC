@@ -32,7 +32,7 @@ export class AddPayrollComponent {
         this.service.postAddPayroll(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/PayrollManagement']);
         })
       }
       else{

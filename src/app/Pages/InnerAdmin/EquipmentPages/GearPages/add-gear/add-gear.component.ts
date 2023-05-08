@@ -33,7 +33,7 @@ export class AddGearComponent {
         this.service.postAddGear(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/GearManagement']);
         })
       }
       else{

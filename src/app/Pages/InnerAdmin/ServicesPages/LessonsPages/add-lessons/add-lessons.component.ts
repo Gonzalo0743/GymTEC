@@ -41,7 +41,7 @@ export class AddLessonsComponent {
         this.service.postAddLessons(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/LessonsManagement']);
         })
       }
       else{

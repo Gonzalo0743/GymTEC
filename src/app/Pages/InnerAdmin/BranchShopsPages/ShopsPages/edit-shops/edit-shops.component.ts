@@ -34,7 +34,7 @@ export class EditShopsComponent {
         this.service.putEditShops(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/ShopsManagement']);
         })
       }
       else{

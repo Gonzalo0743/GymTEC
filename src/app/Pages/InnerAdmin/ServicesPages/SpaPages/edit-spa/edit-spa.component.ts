@@ -33,7 +33,7 @@ export class EditSpaComponent {
         this.service.putEditSpa(formObj).subscribe(item => {
           this.jsonResponse = item;
           console.log(this.jsonResponse);
-          this.router.navigate(['/']);
+          this.router.navigate(['/SpaManagement']);
         })
       }
       else{
