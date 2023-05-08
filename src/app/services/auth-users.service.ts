@@ -18,21 +18,14 @@ export class AuthUsersService {
   }
 
 
-  public getAdmins(ID_Credentials:any, Password:any){
+  public getAdmins(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("ID_Credentials",ID_Credentials);
-    queryParams = queryParams.append("Password",Password);
-
-    return this.http.post(this.rootUrl + 'auth_employee',{params:queryParams});
+    return this.http.post(this.rootUrl + 'auth_employee',data);
   }
 
-  public getBranches(Name:any){
+  public getBranches(data:any){
 
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("Name",Name);
-
-    return this.http.post(this.rootUrl + 'obt_branch',{params:queryParams});
+    return this.http.post(this.rootUrl + 'obt_branch',data);
   }
 
   public getGear(gear_ID:any){

@@ -25,7 +25,9 @@ export class ShowBranchesComponent {
     proceedShowBranches(){
       if(this.ShowBranchesForm.valid){
 
-        this.service.getBranches(this.ShowBranchesForm.value.Name).subscribe(item =>{
+        let formObj = this.ShowBranchesForm.getRawValue();
+
+        this.service.getBranches(formObj).subscribe(item =>{
 
           this.json = item;
 

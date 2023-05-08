@@ -32,7 +32,7 @@ export class MainPageComponent {
           //Revisar si ese "Ok" se escribe exactamente igual
           if(this.json.status == "ok"){
             this.router.navigate(['/ClientLandPage']);
-            console.log("Login Succesful");
+            console.log("Login Succesfull");
 
           }
           else{

@@ -22,13 +22,16 @@ export class LoginAdminComponent {
     proceedAdminLogin(){
       if(this.loginAdminForm.valid){
 
-        this.service.getAdmins(this.loginAdminForm.value.ID_Credentials, this.loginAdminForm.value.Password).subscribe(item =>{
+        let formObj = this.loginAdminForm.getRawValue();
+
+        this.service.getAdmins(formObj).subscribe(item =>{
           this.json = item;
           
 
           //Revisar si ese "Ok" se escribe exactamente igual
           if(this.json.status == "ok"){
             this.router.navigate(['/AdminLandPage']);
+            console.log("Login Succesfull");
           }
           else{
             this.loginAdminForm.setErrors({unauthenticated: true});
