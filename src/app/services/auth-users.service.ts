@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpParams} from '@angular/common/http';
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -219,9 +219,15 @@ export class AuthUsersService {
   }
 
   //*Delete* for delete info
-  public deleteBranches(data:any){
-
-    return this.http.delete(this.rootUrl + 'delete_branch',data);
+  public deleteBranches(Name:any){
+    let address = this.rootUrl + 'delete_branch';
+    let Options = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      }),
+      body: Name,
+    };
+    return this.http.delete(address,Options);
 
   }
 

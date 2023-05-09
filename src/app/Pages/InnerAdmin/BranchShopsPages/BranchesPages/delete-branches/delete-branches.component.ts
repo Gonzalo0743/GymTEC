@@ -35,10 +35,10 @@ export class DeleteBranchesComponent {
       
       if(this.DeleteBranchesForm.valid){
 
-        let formObj = this.DeleteBranchesForm.getRawValue();
-        console.log(formObj);
+        //let formObj = this.DeleteBranchesForm.getRawValue();
+        //console.log(formObj);
 
-        this.service.deleteBranches(formObj).subscribe(item => {
+        this.service.deleteBranches(this.DeleteBranchesForm.value.Name).subscribe(item => {
 
           this.json = item;
 
