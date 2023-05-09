@@ -19,7 +19,9 @@ export class DeleteGearComponent {
    */
 
   DeleteGearForm = this.builder.group({
-    gear_ID: this.builder.control(0, Validators.required)})
+    gear_ID: this.builder.control(0, Validators.required),
+  
+  })
 
 
   /**

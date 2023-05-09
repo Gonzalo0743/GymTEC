@@ -26,7 +26,7 @@ import { AddBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/Branch
 import { ShowBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/show-branches/show-branches.component';
 
 
-import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-management-page/job-management-page.component';
+import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/JobPages/job-management-page/job-management-page.component';
 import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/payroll-management-page/payroll-management-page.component';
 
 import { EmployeeManagementPageComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/employee-management-page/employee-management-page.component';
@@ -81,6 +81,11 @@ import { ShowAllSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/s
 import { EditSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/edit-spa/edit-spa.component';
 import { ShowSpaTreatmentComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/show-spa-treatment/show-spa-treatment.component';
 import { SpaManegementComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/spa-manegement/spa-manegement.component';
+import { ShowAllJobComponent } from './Pages/InnerAdmin/FormPages/JobPages/show-all-job/show-all-job.component';
+import { ShowJobComponent } from './Pages/InnerAdmin/FormPages/JobPages/show-job/show-job.component';
+import { EditJobComponent } from './Pages/InnerAdmin/FormPages/JobPages/edit-job/edit-job.component';
+import { AddClientToClassComponent } from './Pages/Client/add-client-to-class/add-client-to-class.component';
+import { ShowAllClassesComponent } from './Pages/Client/show-all-classes/show-all-classes.component';
 
 
 
@@ -158,6 +163,11 @@ import { SpaManegementComponent } from './Pages/InnerAdmin/ServicesPages/SpaPage
     EditSpaComponent,
     ShowSpaTreatmentComponent,
     SpaManegementComponent,
+    ShowAllJobComponent,
+    ShowJobComponent,
+    EditJobComponent,
+    AddClientToClassComponent,
+    ShowAllClassesComponent,
 
 
     

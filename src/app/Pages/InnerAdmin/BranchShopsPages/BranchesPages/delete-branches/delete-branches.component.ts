@@ -19,7 +19,9 @@ export class DeleteBranchesComponent {
    */
 
   DeleteBranchesForm = this.builder.group({
-    Name: this.builder.control('', Validators.required)})
+    Name: this.builder.control('', Validators.required),
+  
+  })
 
 
   /**
@@ -27,11 +29,14 @@ export class DeleteBranchesComponent {
    */
   
   proceedDeleteBranches(){
-    let formObj = this.DeleteBranchesForm.getRawValue();
+    
 
-      console.log(formObj);
+      
       
       if(this.DeleteBranchesForm.valid){
+
+        let formObj = this.DeleteBranchesForm.getRawValue();
+        console.log(formObj);
 
         this.service.deleteBranches(formObj).subscribe(item => {
 
@@ -49,8 +54,7 @@ export class DeleteBranchesComponent {
         })
       }
       else{
-        console.log("Error, branch name didnt exist")
-        console.log("MANDELE FAYAH");
+        console.log("Error, branch name didnt exist");
       }
     }
 

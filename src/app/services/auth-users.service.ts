@@ -53,6 +53,11 @@ export class AuthUsersService {
     return this.http.post(this.rootUrl + 'obt_shop_product',data);
   }
 
+  public getJob(data:any){
+
+    return this.http.post(this.rootUrl + 'obt_jobs',data);
+  }
+
   //*Gets* for show all the names
 
   public getAllBranches(){
@@ -98,6 +103,16 @@ export class AuthUsersService {
   public getAllSpa(){
 
     return this.http.get(this.rootUrl + 'all_spa');
+  }
+
+  public getAllJob(){
+
+    return this.http.get(this.rootUrl + 'all_jobs');
+  }
+
+  public getAllClasses(){
+
+    return this.http.get(this.rootUrl + 'all_classes');
   }
 
   
@@ -147,6 +162,11 @@ export class AuthUsersService {
 
     return this.http.post(this.rootUrl + 'add_lesson', data);
   }
+
+  public postRegisterClass(data:any){
+
+    return this.http.post(this.rootUrl + 'add_client_to_lesson', data);
+  }
   //*Put* for edit info
   public putEditBranches(data:any){
 
@@ -191,6 +211,11 @@ export class AuthUsersService {
   public putEditSpa(data:any){
 
     return this.http.put(this.rootUrl + 'mod_spa', data);
+  }
+
+  public putEditJob(data:any){
+
+    return this.http.put(this.rootUrl + 'mod_job', data);
   }
 
   //*Delete* for delete info

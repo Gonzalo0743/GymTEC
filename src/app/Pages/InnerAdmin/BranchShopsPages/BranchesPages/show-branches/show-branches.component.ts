@@ -16,8 +16,7 @@ export class ShowBranchesComponent {
     response:any;
 
     ShowBranchesForm = this.builder.group({
-
-      Name: this.builder.control('', Validators.required),
+      Name: this.builder.control([], Validators.required),
       
 
     })

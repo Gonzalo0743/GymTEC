@@ -38,7 +38,7 @@ import { AddEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages
 import { ShowEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-employee/show-employee.component';
 import { DeleteEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/delete-employee/delete-employee.component';
 
-import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/job-management-page/job-management-page.component';
+import { JobManagementPageComponent } from './Pages/InnerAdmin/FormPages/JobPages/job-management-page/job-management-page.component';
 import { PayrollManagementPageComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/payroll-management-page/payroll-management-page.component';
 import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/products-management-page/products-management-page.component';
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/services-management-page/services-management-page.component';
@@ -69,6 +69,11 @@ import { ShowAllSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/s
 import { EditSpaComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/edit-spa/edit-spa.component';
 import { ShowSpaTreatmentComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/show-spa-treatment/show-spa-treatment.component';
 import { SpaManegementComponent } from './Pages/InnerAdmin/ServicesPages/SpaPages/spa-manegement/spa-manegement.component';
+import { ShowAllJobComponent } from './Pages/InnerAdmin/FormPages/JobPages/show-all-job/show-all-job.component';
+import { ShowJobComponent } from './Pages/InnerAdmin/FormPages/JobPages/show-job/show-job.component';
+import { EditJobComponent } from './Pages/InnerAdmin/FormPages/JobPages/edit-job/edit-job.component';
+import { ShowAllClassesComponent } from './Pages/Client/show-all-classes/show-all-classes.component';
+import { AddClientToClassComponent } from './Pages/Client/add-client-to-class/add-client-to-class.component';
 
 
 const routes: Routes = [
@@ -113,6 +118,15 @@ const routes: Routes = [
     path:'ClientClassRegisterPage',
     component: ClientClassRegisterPageComponent
   },
+  {
+    path:'ShowAllClasses',
+    component: ShowAllClassesComponent
+  },
+  {
+    path:'ClassRegisterPage',
+    component: AddClientToClassComponent
+  },
+  
   {
     path:'LessonsManagement',
     component: LessonsManagementComponent
@@ -239,8 +253,20 @@ const routes: Routes = [
     component: EditEmployeeComponent
   },
   {
-    path:'JobsManagement',
+    path:'JobManagement',
     component: JobManagementPageComponent
+  },
+  {
+    path:'ShowAllJob',
+    component: ShowAllJobComponent
+  },
+  {
+    path:'ShowJob',
+    component: ShowJobComponent
+  },
+  {
+    path:'EditJob',
+    component: EditJobComponent
   },
   {
     path:'PayrollManagement',
