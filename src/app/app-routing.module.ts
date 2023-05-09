@@ -44,7 +44,7 @@ import { ProductsManagementPageComponent } from './Pages/InnerAdmin/ServicesPage
 import { ServicesManagementPageComponent } from './Pages/InnerAdmin/ServicesPages/ServicesPages/services-management-page/services-management-page.component';
 import { ShowAllInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/show-all-inventory/show-all-inventory.component';
 import { EditInventoryComponent } from './Pages/InnerAdmin/EquipmentPages/InventoryPages/edit-inventory/edit-inventory.component';
-import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
+import { ShowPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-payroll/show-payroll.component';
 import { ShowAllPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-all-payroll/show-all-payroll.component';
 import { EditPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/edit-payroll/edit-payroll.component';
 import { EditBranchesComponent } from './Pages/InnerAdmin/BranchShopsPages/BranchesPages/edit-branches/edit-branches.component';
@@ -273,8 +273,8 @@ const routes: Routes = [
     component: PayrollManagementPageComponent
   },
   {
-    path:'AddPayroll',
-    component: AddPayrollComponent
+    path:'ShowPayroll',
+    component: ShowPayrollComponent
   },
   {
     path:'ShowAllPayroll',

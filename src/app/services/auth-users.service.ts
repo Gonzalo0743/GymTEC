@@ -109,6 +109,16 @@ export class AuthUsersService {
     return this.http.post(this.rootUrl + 'obt_jobs',data);
   }
 
+  public getPayroll(data:any){
+
+    return this.http.post(this.rootUrl + 'obt_payroll',data);
+  }
+
+  public getSpaTreatment(data:any){
+
+    return this.http.post(this.rootUrl + 'obt_spa_treatment',data);
+  }
+
   //*Gets* for show all the names
 
 
@@ -261,16 +271,6 @@ export class AuthUsersService {
   public postAddGear(data:any){
 
     return this.http.post(this.rootUrl + 'add_gear', data);
-  }
-
-    /**
-   * @description This method is used to add a payroll type to the system
-   * @param data 
-   * @returns The function to the api to create the payroll type
-   */
-  public postAddPayroll(data:any){
-
-    return this.http.post(this.rootUrl + 'add_payroll', data);
   }
 
     /**

@@ -1,0 +1,40 @@
+<app-header-admin></app-header-admin>
+
+<!-- Title -->
+<div class="p-5 text-center">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+    <h1 class="mb-3">Show Payroll</h1>
+  </div>
+  <!-- Title -->
+
+  <form [formGroup]="ShowPayrollForm" (ngSubmit)="proceedShowPayroll()">
+
+    <!--Employee ID-->
+    <div class="form-outline">
+        <input type="text" formControlName="Employee_ID" id="form3Example1" class="form-control" />
+        <label class="form-label" for="form3Example1">Employee ID</label>
+    </div>
+    
+
+
+    
+    <!-- Submit button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Show</button>
+    </div>
+
+    {{response}}
+
+    <!-- Back button -->
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" routerLink="/PayrollManagement">Back</button>
+    </div>
+
+
+
+    
+</form>
+
+
+    

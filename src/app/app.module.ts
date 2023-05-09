@@ -60,7 +60,7 @@ import { DeleteGearComponent } from './Pages/InnerAdmin/EquipmentPages/GearPages
 import { ShowAllEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/show-all-employee/show-all-employee.component';
 import { EditEmployeeComponent } from './Pages/InnerAdmin/FormPages/EmployeePages/edit-employee/edit-employee.component';
 import { ShowAllPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-all-payroll/show-all-payroll.component';
-import { AddPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/add-payroll/add-payroll.component';
+import { ShowPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/show-payroll/show-payroll.component';
 import { EditPayrollComponent } from './Pages/InnerAdmin/FormPages/PayrollPages/edit-payroll/edit-payroll.component';
 import { ShowAllProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-all-products/show-all-products.component';
 import { ShowProductsComponent } from './Pages/InnerAdmin/ServicesPages/ProductsPages/show-products/show-products.component';
@@ -142,7 +142,7 @@ import { ShowAllClassesComponent } from './Pages/Client/show-all-classes/show-al
     ShowAllEmployeeComponent,
     EditEmployeeComponent,
     ShowAllPayrollComponent,
-    AddPayrollComponent,
+    ShowPayrollComponent,
     EditPayrollComponent,
     ShowAllProductsComponent,
     ShowProductsComponent,
