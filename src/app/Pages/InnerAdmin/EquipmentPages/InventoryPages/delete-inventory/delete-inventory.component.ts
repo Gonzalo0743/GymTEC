@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class DeleteInventoryComponent {
 
-  constructor(private builder: FormBuilder, private service: AuthUsersService){}
+  constructor(private builder: FormBuilder, private service: AuthUsersService, private router: Router){}
 
   jsonResponse: any;
 
@@ -22,8 +22,9 @@ export class DeleteInventoryComponent {
   })
 
 
-  /**
-   * Function to get the information in the form and send it to a method that will sent it as an HTTPS request
+            /**
+   * @description This function calls the function of the api to delete a inventory of the system
+   * @returns A succesfull delete of the specific delete or an error
    */
   
   proceedDeleteInventory(){
@@ -34,13 +35,14 @@ export class DeleteInventoryComponent {
       
       if(this.DeleteInventoryForm.valid){
 
-        this.service.deleteInventory( this.DeleteInventoryForm.value.Serial_Number).subscribe(item => {
+        this.service.deleteInventory(formObj).subscribe(item => {
 
           this.jsonResponse = item;
 
           if (this.jsonResponse.status == "ok"){
 
             console.log(this.jsonResponse);
+            this.router.navigate(['/EquipmentManagement']);
 
           }else {
             

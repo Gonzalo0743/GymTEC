@@ -21,7 +21,10 @@ export class ShowGearComponent {
       
 
     })
-
+                /**
+   * @description This function calls the function of the api to show a specific gear of the system
+   * @returns A succesfull show of the selected gear or an error
+   */
     proceedShowGear(){
       if(this.ShowGearForm.valid){
 

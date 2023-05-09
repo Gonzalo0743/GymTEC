@@ -423,13 +423,13 @@ export class AuthUsersService {
    * @param data 
    * @returns The function to the api to delete the specific branch
    */
-  public deleteBranches(Name:any){
+  public deleteBranches(data:any){
     let address = this.rootUrl + 'delete_branch';
     let Options = {
       headers: new HttpHeaders({
         'Content-type': 'application/json',
       }),
-      body: Name,
+      body: data,
     };
     return this.http.delete(address,Options);
 
@@ -442,9 +442,18 @@ export class AuthUsersService {
    */
   public deleteInventory(data:any){
 
-    return this.http.delete(this.rootUrl + 'delete_inventory',data);
+    let address = this.rootUrl + 'delete_inventory';
+    let Options = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      }),
+      body: data,
+    };
+    return this.http.delete(address,Options);
 
   }
+
+  
 
         /**
    * @description This method is used to delete an employee of the system
@@ -453,8 +462,14 @@ export class AuthUsersService {
    */
   public deleteEmployee(data:any){
 
-
-    return this.http.delete(this.rootUrl + 'delete_employee',data);
+    let address = this.rootUrl + 'delete_employee';
+    let Options = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      }),
+      body: data,
+    };
+    return this.http.delete(address,Options);
 
   }
 
@@ -464,9 +479,14 @@ export class AuthUsersService {
    * @returns The function to the api to delete the specific gear
    */
   public deleteGear(data:any){
-
-    return this.http.delete(this.rootUrl + 'delete_gear',data);
-
+    let address = this.rootUrl + 'delete_gear';
+    let Options = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      }),
+      body: data,
+    };
+    return this.http.delete(address,Options);
   }
 
         /**
@@ -476,7 +496,14 @@ export class AuthUsersService {
    */
   public deleteProducts(data:any){
 
-    return this.http.delete(this.rootUrl + 'delete_product',data);
+    let address = this.rootUrl + 'delete_product';
+    let Options = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      }),
+      body: data,
+    };
+    return this.http.delete(address,Options);
 
   }
 
@@ -487,7 +514,14 @@ export class AuthUsersService {
    */
   public deleteServices(data:any){
 
-    return this.http.delete(this.rootUrl + 'delete_service',data);
+    let address = this.rootUrl + 'delete_service';
+    let Options = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      }),
+      body: data,
+    };
+    return this.http.delete(address,Options);
 
   }
 }

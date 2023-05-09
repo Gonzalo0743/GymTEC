@@ -22,6 +22,10 @@ export class ShowJobComponent {
 
     })
 
+                    /**
+   * @description This function calls the function of the api to show a specific job of the system
+   * @returns A succesfull show of the selected job or an error
+   */
     proceedShowJob(){
       if(this.ShowJobForm.valid){
 

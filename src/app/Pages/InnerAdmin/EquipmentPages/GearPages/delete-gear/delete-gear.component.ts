@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DeleteGearComponent {
 
-  constructor(private builder: FormBuilder, private service: AuthUsersService){}
+  constructor(private builder: FormBuilder, private service: AuthUsersService, private router: Router){}
 
   jsonResponse: any;
 
@@ -23,15 +23,16 @@ export class DeleteGearComponent {
   
   })
 
-
-  /**
-   * Function to get the information in the form and send it to a method that will sent it as an HTTPS request
+            /**
+   * @description This function calls the function of the api to delete a gear of the system
+   * @returns A succesfull delete of the specific gear or an error
    */
   
   proceedDeleteGear(){
       
       if(this.DeleteGearForm.valid){
         let formObj = this.DeleteGearForm.getRawValue();
+        console.log(formObj);
 
         this.service.deleteGear(formObj).subscribe(item => {
 
@@ -40,6 +41,7 @@ export class DeleteGearComponent {
           if (this.jsonResponse.status == "ok"){
 
             console.log(this.jsonResponse);
+            this.router.navigate(['/EquipmentManagement']);
 
           }else {
             

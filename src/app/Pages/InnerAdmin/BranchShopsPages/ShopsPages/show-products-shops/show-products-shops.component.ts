@@ -21,7 +21,10 @@ export class ShowProductsShopsComponent {
     
 
   })
-
+                /**
+   * @description This function calls the function of the api to show a specific product shop of the system
+   * @returns A succesfull show of the selected product shop or an error
+   */
   proceedShowProductsShops(){
     if(this.ShowProductsShopsForm.valid){
 

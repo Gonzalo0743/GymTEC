@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DeleteServicesComponent {
 
-  constructor(private builder: FormBuilder, private service: AuthUsersService){}
+  constructor(private builder: FormBuilder, private service: AuthUsersService, private router: Router){}
 
   jsonResponse: any;
 
@@ -22,8 +22,9 @@ export class DeleteServicesComponent {
     ID_Service: this.builder.control('', Validators.required)})
 
 
-  /**
-   * Function to get the information in the form and send it to a method that will sent it as an HTTPS request
+      /**
+   * @description This function calls the function of the api to delete a service of the system
+   * @returns A succesfull delete of the specific service or an error
    */
   
   proceedDeleteServices(){
@@ -34,13 +35,14 @@ export class DeleteServicesComponent {
       
       if(this.DeleteServicesForm.valid){
 
-        this.service.deleteServices( this.DeleteServicesForm.value.ID_Service ).subscribe(item => {
+        this.service.deleteServices(formObj).subscribe(item => {
 
           this.jsonResponse = item;
 
           if (this.jsonResponse.status == "ok"){
 
             console.log(this.jsonResponse);
+            this.router.navigate(['/ServicesManagement']);
 
           }else {
             

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DeleteProductsComponent {
 
-  constructor(private builder: FormBuilder, private service: AuthUsersService){}
+  constructor(private builder: FormBuilder, private service: AuthUsersService, private router: Router){}
 
   jsonResponse: any;
 
@@ -22,8 +22,9 @@ export class DeleteProductsComponent {
     Barcode: this.builder.control('', Validators.required)})
 
 
-  /**
-   * Function to get the information in the form and send it to a method that will sent it as an HTTPS request
+            /**
+   * @description This function calls the function of the api to delete a product of the system
+   * @returns A succesfull delete of the specific product or an error
    */
   
   proceedDeleteProducts(){
@@ -34,13 +35,14 @@ export class DeleteProductsComponent {
       
       if(this.DeleteProductsForm.valid){
 
-        this.service.deleteProducts( this.DeleteProductsForm.value.Barcode ).subscribe(item => {
+        this.service.deleteProducts(formObj).subscribe(item => {
 
           this.jsonResponse = item;
 
           if (this.jsonResponse.status == "ok"){
 
             console.log(this.jsonResponse);
+            this.router.navigate(['/ProductManagement']);
 
           }else {
             

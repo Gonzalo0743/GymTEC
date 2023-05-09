@@ -21,6 +21,10 @@ export class ShowBranchesComponent {
 
     })
 
+                /**
+   * @description This function calls the function of the api to show a specific branch of the system
+   * @returns A succesfull show of the selected branch or an error
+   */
     proceedShowBranches(){
       if(this.ShowBranchesForm.valid){
 

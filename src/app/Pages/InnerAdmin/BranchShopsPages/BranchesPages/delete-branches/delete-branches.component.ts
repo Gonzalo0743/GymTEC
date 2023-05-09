@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DeleteBranchesComponent {
 
-  constructor(private builder: FormBuilder, private service: AuthUsersService){}
+  constructor(private builder: FormBuilder, private service: AuthUsersService, private router: Router){}
 
   json: any;
 
@@ -24,14 +24,13 @@ export class DeleteBranchesComponent {
   })
 
 
-  /**
-   * Function to get the information in the form and send it to a method that will sent it as an HTTPS request
+            /**
+   * @description This function calls the function of the api to delete a branch of the system
+   * @returns A succesfull delete of the specific branch or an error
    */
   
   proceedDeleteBranches(){
     
-
-      
       
       if(this.DeleteBranchesForm.valid){
 
@@ -45,6 +44,7 @@ export class DeleteBranchesComponent {
           if (this.json.status == "ok"){
 
             console.log(this.json);
+            this.router.navigate(['/BranchesManagement']);
 
           }else {
             
