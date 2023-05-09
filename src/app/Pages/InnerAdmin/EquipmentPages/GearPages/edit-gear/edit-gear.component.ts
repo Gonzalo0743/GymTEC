@@ -27,6 +27,10 @@ export class EditGearComponent {
 
     })
 
+        /**
+   * @description This function calls the function of the api to edit a gear of the system
+   * @returns A succesfull edit of the selected gear or an error
+   */
     proceedEditGear(){
       let formObj = this.editGearForm.getRawValue();
       console.log(formObj);

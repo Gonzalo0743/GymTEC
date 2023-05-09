@@ -15,6 +15,10 @@ export class AllShopsComponent {
   jsonResponse: any;
   response:any;
 
+          /**
+   * @description This function calls the function of the api to obtain all the shops
+   * @returns A list with all the shops
+   */
   proceedShowAllShops(){
 
     this.service.getAllShops().subscribe(item =>{

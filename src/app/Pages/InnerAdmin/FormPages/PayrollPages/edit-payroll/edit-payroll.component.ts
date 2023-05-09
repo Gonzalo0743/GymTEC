@@ -23,7 +23,10 @@ export class EditPayrollComponent {
       
 
     })
-
+                /**
+   * @description This function calls the function of the api to edit a payroll type of the system
+   * @returns A succesfull edit of the selected payroll type or an error
+   */
     proceedEditPayroll(){
       let formObj = this.editPayrollForm.getRawValue();
       console.log(formObj);

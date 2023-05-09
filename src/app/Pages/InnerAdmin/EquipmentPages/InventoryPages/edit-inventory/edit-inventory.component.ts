@@ -25,6 +25,10 @@ export class EditInventoryComponent {
 
     })
 
+       /**
+   * @description This function calls the function of the api to edit an inventory of the system
+   * @returns A succesfull edit of the selected inventory or an error
+   */
     proceedEditInventory(){
       let formObj = this.editInventoryForm.getRawValue();
       console.log(formObj);

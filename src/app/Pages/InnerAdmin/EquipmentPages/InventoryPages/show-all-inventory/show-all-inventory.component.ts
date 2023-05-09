@@ -15,6 +15,10 @@ export class ShowAllInventoryComponent {
     jsonResponse: any;
     response:any;
 
+            /**
+   * @description This function calls the function of the api to obtain all the inventory
+   * @returns A list with all the inventory
+   */
     proceedShowAllInventory(){
 
       this.service.getAllInventory().subscribe(item =>{

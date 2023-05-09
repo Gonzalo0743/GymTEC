@@ -19,6 +19,10 @@ export class LoginAdminComponent {
       Password: this.builder.control('', Validators.required)
     })
 
+      /**
+   * @description This function is to prepare the info of the admin to send it to the api 
+   * @returns The login to the page or the error of the login
+   */
     proceedAdminLogin(){
       if(this.loginAdminForm.valid){
 

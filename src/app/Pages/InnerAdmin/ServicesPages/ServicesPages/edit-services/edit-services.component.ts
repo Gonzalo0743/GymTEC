@@ -24,7 +24,10 @@ export class EditServicesComponent {
       
 
     })
-
+                /**
+   * @description This function calls the function of the api to edit a service of the system
+   * @returns A succesfull edit of the selected service or an error
+   */
     proceedEditServices(){
       let formObj = this.editServicesForm.getRawValue();
       console.log(formObj);

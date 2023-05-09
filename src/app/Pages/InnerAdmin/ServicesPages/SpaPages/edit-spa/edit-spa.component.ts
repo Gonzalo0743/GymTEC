@@ -24,7 +24,10 @@ export class EditSpaComponent {
 
 
     })
-
+                /**
+   * @description This function calls the function of the api to edit a spa of the system
+   * @returns A succesfull edit of the selected spa or an error
+   */
     proceedEditSpa(){
       let formObj = this.editSpaForm.getRawValue();
       console.log(formObj);

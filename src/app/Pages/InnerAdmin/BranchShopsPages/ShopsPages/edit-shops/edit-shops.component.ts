@@ -26,6 +26,10 @@ export class EditShopsComponent {
 
     })
 
+                /**
+   * @description This function calls the function of the api to edit a shop of the system
+   * @returns A succesfull edit of the selected shop or an error
+   */
     proceedEditShops(){
       let formObj = this.editShopsForm.getRawValue();
       console.log(formObj);

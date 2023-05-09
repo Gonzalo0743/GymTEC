@@ -15,6 +15,10 @@ export class ShowAllEmployeeComponent {
     jsonResponse: any;
     response:any;
 
+            /**
+   * @description This function calls the function of the api to obtain all the employees
+   * @returns A list with all the employees
+   */
     proceedShowAllEmployee(){
 
       this.service.getAllEmployee().subscribe(item =>{

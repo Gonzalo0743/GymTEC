@@ -19,7 +19,10 @@ export class MainPageComponent {
       ID_Credentials: this.builder.control('', Validators.required),
       Password: this.builder.control('', Validators.required)
     })
-
+      /**
+   * @description This function is to prepare the info of the client to send it to the api 
+   * @returns The login to the page or the error of the login
+   */
     proceedClientLogin(){
       if(this.loginClientForm.valid){
 

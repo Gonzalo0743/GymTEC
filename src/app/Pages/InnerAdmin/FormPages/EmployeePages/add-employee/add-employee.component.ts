@@ -33,7 +33,10 @@ export class AddEmployeeComponent {
 
 
     })
-
+            /**
+   * @description This function calls the function of the api to add a new employee to the system
+   * @returns A succesfull register of the new employee or an error
+   */
     proceedAddEmployee(){
       let formObj = this.addEmployeeForm.getRawValue();
       console.log(formObj);

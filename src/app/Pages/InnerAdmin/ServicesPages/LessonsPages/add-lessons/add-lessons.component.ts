@@ -32,7 +32,10 @@ export class AddLessonsComponent {
       
 
     })
-
+            /**
+   * @description This function calls the function of the api to add a new lesson to the system
+   * @returns A succesfull register of the new lesson or an error
+   */
     proceedAddLessons(){
       let formObj = this.addLessonsForm.getRawValue();
       console.log(formObj);

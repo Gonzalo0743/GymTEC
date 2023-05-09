@@ -24,7 +24,10 @@ export class AddGearComponent {
       
 
     })
-
+            /**
+   * @description This function calls the function of the api to add a new gear to the system
+   * @returns A succesfull register of the new gear or an error
+   */
     proceedAddGear(){
       let formObj = this.addGearForm.getRawValue();
       console.log(formObj);

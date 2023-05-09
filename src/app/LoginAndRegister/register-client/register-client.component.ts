@@ -31,7 +31,10 @@ export class RegisterClientComponent {
       
 
     })
-
+      /**
+   * @description This function is to prepare the info of the client to send it to the api 
+   * @returns Send the info to the api to create a new client
+   */
     proceedAddClient(){
       let formObj = this.createClientForm.getRawValue();
       console.log(formObj);

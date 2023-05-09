@@ -23,7 +23,10 @@ export class AddPayrollComponent {
       
 
     })
-
+            /**
+   * @description This function calls the function of the api to add a new payroll type to the system
+   * @returns A succesfull register of the new payroll type or an error
+   */
     proceedAddPayroll(){
       let formObj = this.addPayrollForm.getRawValue();
       console.log(formObj);

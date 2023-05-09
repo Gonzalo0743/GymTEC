@@ -27,6 +27,10 @@ export class AddBranchesComponent {
 
     })
 
+            /**
+   * @description This function calls the function of the api to add a new branch to the system
+   * @returns A succesfull register of the new branch or an error
+   */
     proceedAddBranches(){
       let formObj = this.addBranchesForm.getRawValue();
       console.log(formObj);

@@ -27,7 +27,10 @@ export class EditProductsComponent {
       
 
     })
-
+                /**
+   * @description This function calls the function of the api to edit a product of the system
+   * @returns A succesfull edit of the selected product or an error
+   */
     proceedEditProducts(){
       let formObj = this.editProductsForm.getRawValue();
       console.log(formObj);

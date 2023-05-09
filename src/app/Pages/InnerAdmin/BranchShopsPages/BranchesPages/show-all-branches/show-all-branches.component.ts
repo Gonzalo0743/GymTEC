@@ -15,6 +15,10 @@ export class ShowAllBranchesComponent {
     jsonResponse: any;
     response:any;
 
+            /**
+   * @description This function calls the function of the api to obtain all the branches
+   * @returns A list with all the branches
+   */
     proceedShowAllBranches(){
 
       this.service.getAllBranches().subscribe(item =>{

@@ -24,6 +24,10 @@ export class AddInventoryComponent {
 
     })
 
+    /**
+   * @description This function calls the function of the api to add a new inventory to the system
+   * @returns A succesfull register of the new inventory or an error
+   */
     proceedAddInventory(){
       let formObj = this.addInventoryForm.getRawValue();
       console.log(formObj);

@@ -21,6 +21,10 @@ export class AddClientToClassComponent {
       
     })
 
+      /**
+   * @description This function is to prepare the info of the client to send it to the api 
+   * @returns The succesfull register or the error
+   */
     proceedRegisterClass(){
       let formObj = this.RegisterClassForm.getRawValue();
       console.log(formObj);

@@ -24,6 +24,10 @@ export class AddServicesComponent {
 
     })
 
+        /**
+   * @description This function calls the function of the api to add a new service to the system
+   * @returns A succesfull register of the new service or an error
+   */
     proceedAddServices(){
       let formObj = this.addServicesForm.getRawValue();
       console.log(formObj);

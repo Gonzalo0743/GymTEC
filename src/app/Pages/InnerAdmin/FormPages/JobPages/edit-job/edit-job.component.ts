@@ -24,6 +24,10 @@ export class EditJobComponent {
 
     })
 
+    /**
+   * @description This function calls the function of the api to edit a job of the system
+   * @returns A succesfull edit of the selected job or an error
+   */
     proceedEditJob(){
       let formObj = this.editJobForm.getRawValue();
       console.log(formObj);

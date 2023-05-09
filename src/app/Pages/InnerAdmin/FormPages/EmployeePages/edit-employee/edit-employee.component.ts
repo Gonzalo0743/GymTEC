@@ -34,7 +34,10 @@ export class EditEmployeeComponent {
 
 
     })
-
+                /**
+   * @description This function calls the function of the api to edit an employee of the system
+   * @returns A succesfull edit of the selected employee or an error
+   */
     proceedEditEmployee(){
       let formObj = this.editEmployeeForm.getRawValue();
       console.log(formObj);

@@ -15,6 +15,10 @@ export class ShowAllPayrollComponent {
   jsonResponse: any;
   response:any;
 
+          /**
+   * @description This function calls the function of the api to obtain all the payroll types
+   * @returns A list with all the payroll types
+   */
   proceedShowAllPayroll(){
 
     this.service.getAllPayroll().subscribe(item =>{

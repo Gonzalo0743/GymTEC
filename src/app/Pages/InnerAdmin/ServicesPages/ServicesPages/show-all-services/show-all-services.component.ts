@@ -15,6 +15,10 @@ export class ShowAllServicesComponent {
     jsonResponse: any;
     response:any;
 
+            /**
+   * @description This function calls the function of the api to obtain all the services
+   * @returns A list with all the services
+   */
     proceedShowAllServices(){
 
       this.service.getAllServices().subscribe(item =>{

@@ -26,6 +26,10 @@ export class AddProductsComponent {
 
     })
 
+            /**
+   * @description This function calls the function of the api to add a new product to the system
+   * @returns A succesfull register of the new product or an error
+   */
     proceedAddProducts(){
       let formObj = this.addProductsForm.getRawValue();
       console.log(formObj);

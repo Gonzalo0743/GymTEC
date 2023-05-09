@@ -28,7 +28,11 @@ export class EditBranchesComponent {
       
 
     })
-
+    
+            /**
+   * @description This function calls the function of the api to edit a branch of the system
+   * @returns A succesfull edit of the selected branch or an error
+   */
     proceedEditBranches(){
       let formObj = this.editBranchesForm.getRawValue();
       console.log(formObj);

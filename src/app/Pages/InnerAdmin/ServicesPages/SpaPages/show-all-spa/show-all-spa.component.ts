@@ -15,6 +15,10 @@ export class ShowAllSpaComponent {
   jsonResponse: any;
   response:any;
 
+          /**
+   * @description This function calls the function of the api to obtain all the classes
+   * @returns A list with all the classes
+   */
   proceedShowAllSpa(){
 
     this.service.getAllSpa().subscribe(item =>{

@@ -15,6 +15,10 @@ export class ShowAllGearComponent {
     jsonResponse: any;
     response:any;
 
+      /**
+   * @description This function calls the function of the api to obtain all the gear
+   * @returns A list with all the gear
+   */
     proceedShowAllGear(){
 
       this.service.getAllGear().subscribe(item =>{
